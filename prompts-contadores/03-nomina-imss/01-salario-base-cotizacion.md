@@ -88,7 +88,7 @@ CALCULA Y PRESENTA:
    - Costo mensual total del trabajador para el patrón
    - Desglose: Salario bruto + Cuotas patronales + Infonavit + ISN
 
-IMPORTANTE: Usa el valor de la UMA vigente en [AÑO] para los cálculos.
+IMPORTANTE: Usa el valor de la UMA vigente en [AÑO] para los cálculos. Referencia UMA 2026: $117.31 diario (vigente desde 1 de febrero de 2026). Tope máximo SBC (25 UMA): $2,932.75 diarios. El valor de la UMA se actualiza cada 1 de febrero; verifica en inegi.org.mx/temas/uma/.
 ```
 
 ## Cómo personalizar
@@ -99,7 +99,7 @@ IMPORTANTE: Usa el valor de la UMA vigente en [AÑO] para los cálculos.
 | `[FECHA_INGRESO]` | Cuándo entró a trabajar | 15 de marzo de 2020 |
 | `[SALARIO_DIARIO]` | Salario diario (no mensual) | 450.00 |
 | `[DIAS]` aguinaldo | Días que paga la empresa | 20 días |
-| `[DIAS]` vacaciones | Según antigüedad y LFT | 14 días (Art. 76 LFT reformado) |
+| `[DIAS]` vacaciones | Según antigüedad y Art. 76 LFT reformado (Vacaciones Dignas 2023): 1er año=12, 2do=14, 3ro=16, 4to=18, 5to=20; a partir del 6to aumenta 2 días cada 5 años | 14 días (2do año) |
 
 ## Ejemplo de uso
 

@@ -119,7 +119,7 @@ IMPORTANTE: Señala si la antigüedad del trabajador genera algún derecho adici
 |-------|-----------|---------|
 | `[NOMBRE]` | Nombre del trabajador | Carlos Mendoza Ruiz |
 | `[FECHA_INGRESO]` | Primer día de trabajo | 16 de julio de 2019 |
-| `[FECHA_SEPARACION]` | Último día de la relación | 28 de febrero de 2025 |
+| `[FECHA_SEPARACION]` | Último día de la relación | 28 de febrero de 2026 |
 | `[SALARIO_DIARIO]` | Salario diario ordinario | 520.00 |
 | `[SDI]` | Salario diario integrado | 554.80 |
 | Causa de separación | Elegir una de las opciones | Despido injustificado |
@@ -130,8 +130,8 @@ IMPORTANTE: Señala si la antigüedad del trabajador genera algún derecho adici
 DATOS DEL TRABAJADOR:
 - Nombre: Laura Castillo Vega
 - Fecha de ingreso: 3 de enero de 2020
-- Fecha de separación: 15 de marzo de 2025
-- Antigüedad: 5 años, 2 meses, 12 días
+- Fecha de separación: 15 de marzo de 2026
+- Antigüedad: 6 años, 2 meses, 12 días
 - Salario diario: $480.00
 - SDI: $513.60
 - Jornada completa
@@ -140,17 +140,17 @@ CAUSA DE SEPARACIÓN: Despido injustificado
 
 PRESTACIONES:
 - Aguinaldo: 15 días
-- Vacaciones (6to año): 16 días
+- Vacaciones (7mo año, Art. 76 LFT reformado): 20 días
 - Prima vacacional: 25%
 - Sin fondo de ahorro
 - Sin comisiones pendientes
 
 INFORMACIÓN ADICIONAL:
-- Último día trabajado y pagado: 15 de marzo de 2025
+- Último día trabajado y pagado: 15 de marzo de 2026
 - Vacaciones no disfrutadas: 8 días (del periodo anterior)
 - No se deben salarios
 - Sin préstamos
-- UMA vigente: $113.14
+- UMA vigente: $117.31 (2026, vigente desde 1 de febrero)
 ```
 
 ## Tips profesionales

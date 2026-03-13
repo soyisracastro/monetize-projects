@@ -8,10 +8,10 @@
 Ahorra 10+ Horas a la Semana con Inteligencia Artificial (Sin Ser Experto en Tecnología)
 
 ### Subtítulo
-24 prompts listos para copiar, pegar y usar en ChatGPT o Claude. Diseñados por un Contador Público mexicano, para contadores mexicanos.
+25 prompts listos para copiar, pegar y usar en ChatGPT o Claude. Diseñados por un Contador Público mexicano, para contadores mexicanos.
 
 ### CTA Principal
-Quiero Mis 24 Prompts — $247 MXN
+Quiero Mis 24 Prompts — $497 MXN
 
 ### Texto bajo el botón
 Descarga inmediata en PDF. Pago seguro.
@@ -56,7 +56,7 @@ Eso es exactamente lo que resuelven estos prompts.
 Prompts de Productividad para Contadores Mexicanos
 
 ### Descripción
-Una colección de **24 prompts profesionales** organizados en 5 categorías, listos para copiar, pegar y personalizar con los datos de tu cliente. Cada prompt incluye instrucciones claras, ejemplo de uso y tips profesionales.
+Una colección de **25 prompts profesionales** organizados en 5 categorías, listos para copiar, pegar y personalizar con los datos de tu cliente. Cada prompt incluye instrucciones claras, ejemplo de uso y tips profesionales.
 
 ### Lo que incluye
 
@@ -104,7 +104,7 @@ Una colección de **24 prompts profesionales** organizados en 5 categorías, lis
 Mira cómo funciona (ejemplo real)
 
 ### Texto
-Este es uno de los 24 prompts incluidos. Copia, pega, personaliza los campos entre corchetes y obtén resultados en segundos:
+Este es uno de los 25 prompts incluidos. Copia, pega, personaliza los campos entre corchetes y obtén resultados en segundos:
 
 ### Ejemplo (Prompt #17 — Explicación de Impuestos)
 > "Tu clienta tiene una estética de belleza. Factura $85,000 al mes. No entiende por qué si ella cobra IVA, todavía tiene que pagar más IVA al SAT."
@@ -114,7 +114,7 @@ Este es uno de los 24 prompts incluidos. Copia, pega, personaliza los campos ent
 > Lista para copiar y mandarle por WhatsApp.
 
 ### CTA
-Quiero los 24 prompts — $247 MXN
+Quiero los 25 prompts — $497 MXN
 
 ---
 
@@ -147,7 +147,7 @@ Creado por un contador que también programa
 ### Texto
 Soy Contador Público mexicano con experiencia real en despacho: declaraciones, nómina, IMSS, asesoría fiscal, todo lo que haces tú cada mes.
 
-Pero también soy programador y llevo más de un año integrando inteligencia artificial en mi práctica contable. Estos 24 prompts no son genéricos sacados de internet. Son las instrucciones exactas que yo uso en mi día a día, refinadas con cientos de pruebas y adaptadas al contexto fiscal mexicano.
+Pero también soy programador y llevo más de un año integrando inteligencia artificial en mi práctica contable. Estos 25 prompts no son genéricos sacados de internet. Son las instrucciones exactas que yo uso en mi día a día, refinadas con cientos de pruebas y adaptadas al contexto fiscal mexicano.
 
 No necesitas saber de tecnología para usarlos. Si puedes copiar y pegar, puedes usar estos prompts.
 
@@ -159,10 +159,10 @@ No necesitas saber de tecnología para usarlos. Si puedes copiar y pegar, puedes
 Invierte menos de lo que cobras por una hora de trabajo
 
 ### Precio
-~~$497 MXN~~ **$247 MXN** — Precio de lanzamiento
+**$497 MXN**
 
 ### Lo que recibes
-- 24 prompts profesionales organizados por categoría
+- 25 prompts profesionales organizados por categoría
 - Guía de inicio rápido (cómo usar los prompts paso a paso)
 - Ejemplos de uso con datos reales (ficticios) para cada prompt
 - Tips profesionales para sacarle el máximo provecho
@@ -170,7 +170,7 @@ Invierte menos de lo que cobras por una hora de trabajo
 - Actualizaciones futuras incluidas
 
 ### CTA
-Descargar Ahora — $247 MXN
+Descargar Ahora — $497 MXN
 
 ### Garantía
 Si en los primeros 7 días sientes que estos prompts no te ahorran tiempo, te devuelvo tu dinero. Sin preguntas.
@@ -189,10 +189,10 @@ Lo que obtienes vs lo que cuesta
 | 2 horas armando una propuesta de servicios | 15 minutos: propuesta profesional con 3 paquetes |
 | 45 min calculando una liquidación a mano | 5 minutos: todos los conceptos con ISR incluido |
 | 1 hora explicándole al cliente por qué paga impuestos | 3 minutos: explicación clara con analogías |
-| "No sé qué escribir en ChatGPT" | 24 prompts listos, solo personaliza los datos |
+| "No sé qué escribir en ChatGPT" | 25 prompts listos, solo personaliza los datos |
 
 ### Texto de cierre
-Conservadoramente, estos prompts te ahorran **5-10 horas al mes**. A $300/hora de tu tiempo, eso es **$1,500-$3,000 mensuales en tiempo recuperado**. La inversión de $247 se paga sola en la primera semana.
+Conservadoramente, estos prompts te ahorran **5-10 horas al mes**. A $300/hora de tu tiempo, eso es **$1,500-$3,000 mensuales en tiempo recuperado**. La inversión de $497 se paga sola en la primera semana.
 
 ---
 
@@ -210,7 +210,7 @@ No. Los prompts funcionan con las versiones gratuitas. La versión de pago da me
 No. Si puedes copiar un texto y pegarlo en un chat, puedes usar estos prompts. La guía de inicio te lleva paso a paso.
 
 **¿Los prompts están actualizados con la legislación vigente?**
-Sí. Están diseñados para el contexto fiscal mexicano actual: CFDI 4.0, regímenes vigentes, tasas de ISN actualizadas, Ley del IMSS, LFT reformada. Además, incluyen actualizaciones futuras.
+Sí. Están diseñados para el contexto fiscal mexicano actual: CFDI 4.0 (catálogos 2026), regímenes vigentes (incluyendo RESICO 2026), tasas de ISN actualizadas por estado, Ley del IMSS, LFT reformada (Vacaciones Dignas 2023, regulación de plataformas digitales 2025-2026), y reforma al CFF 2026. Además, incluyen actualizaciones futuras.
 
 **¿Puedo usarlos con todos mis clientes?**
 Sí. La licencia es para uso personal/profesional ilimitado. Úsalos con todos los clientes que quieras.
@@ -232,10 +232,10 @@ La licencia es individual. Si quieres una licencia para tu despacho (múltiples 
 Deja de hacer en horas lo que la IA puede ayudarte a hacer en minutos
 
 ### Texto
-24 prompts. 5 categorías. 100% enfocados en contabilidad y fiscalidad mexicana. Listos para usar hoy.
+25 prompts. 5 categorías. 100% enfocados en contabilidad y fiscalidad mexicana. Listos para usar hoy.
 
 ### CTA
-Quiero Mis Prompts — $247 MXN
+Quiero Mis Prompts — $497 MXN
 
 ### Texto bajo el botón
 Descarga inmediata. Garantía de 7 días. Pago seguro.
@@ -244,7 +244,7 @@ Descarga inmediata. Garantía de 7 días. Pago seguro.
 
 ## P.S.
 
-Cada mes que pasa sin usar IA en tu práctica contable es tiempo y dinero que dejas en la mesa. Estos prompts no van a hacer tu trabajo por ti, pero sí van a hacer que tu trabajo sea más rápido, más profesional y menos tedioso. Y eso vale mucho más que $247.
+Cada mes que pasa sin usar IA en tu práctica contable es tiempo y dinero que dejas en la mesa. Estos prompts no van a hacer tu trabajo por ti, pero sí van a hacer que tu trabajo sea más rápido, más profesional y menos tedioso. Y eso vale mucho más que $497.
 
 ---
 
@@ -254,10 +254,10 @@ Cada mes que pasa sin usar IA en tu práctica contable es tiempo y dinero que de
 1. Hero → Problema → Puente → Producto → Preview → Para quién → Autor → Precio → Comparativo → FAQ → CTA Final → P.S.
 
 **CTAs sugeridos (todos llevan al mismo checkout de Nas.io):**
-- Hero: "Quiero Mis 24 Prompts — $247 MXN"
-- Después del preview: "Quiero los 24 prompts — $247 MXN"
-- Precio: "Descargar Ahora — $247 MXN"
-- Final: "Quiero Mis Prompts — $247 MXN"
+- Hero: "Quiero Mis 24 Prompts — $497 MXN"
+- Después del preview: "Quiero los 25 prompts — $497 MXN"
+- Precio: "Descargar Ahora — $497 MXN"
+- Final: "Quiero Mis Prompts — $497 MXN"
 
 **Colores sugeridos:**
 - Principal: Azul profesional (#2563EB)

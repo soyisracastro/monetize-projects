@@ -47,7 +47,7 @@ Sin rodeos. Sin relleno.
 
 Como cuando llega un cliente a tu despacho con todos sus documentos ordenados, sabe exactamente qué quiere y te deja trabajar.
 
-Eso es lo que hace cada uno de los 24 prompts del pack.
+Eso es lo que hace cada uno de los 25 prompts del pack.
 
 No están escritos para impresionar.
 

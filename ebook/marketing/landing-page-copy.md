@@ -209,7 +209,7 @@ Invierte en entender la herramienta que va a definir los próximos 10 años de t
 ~~$794 MXN~~ **$597 MXN** — Ahorras $197
 
 - Todo lo del ebook (17 capítulos + 3 apéndices)
-- **+** Los 24 prompts profesionales del Pack de Prompts
+- **+** Los 25 prompts profesionales del Pack de Prompts
 - **+** Guía de inicio rápido del Pack
 - **+** Meta-prompt para crear tus propios prompts
 - Entiende los conceptos Y tenlos aplicados en prompts listos para usar
@@ -262,7 +262,7 @@ No. Este ebook explica los conceptos detrás de la inteligencia artificial: cóm
 No. Cada concepto técnico se explica con analogías de contabilidad y ejemplos del día a día del despacho. Si entiendes qué es una balanza de comprobación, puedes entender este ebook.
 
 **¿Cuál es la diferencia entre el ebook y el Pack de Prompts?**
-El Pack de Prompts te da 24 instrucciones listas para copiar y usar. El ebook te explica POR QUÉ esas instrucciones funcionan y te da el conocimiento para crear las tuyas. Son complementarios: el Pack es la herramienta, el ebook es el entendimiento.
+El Pack de Prompts te da 25 instrucciones listas para copiar y usar. El ebook te explica POR QUÉ esas instrucciones funcionan y te da el conocimiento para crear las tuyas. Son complementarios: el Pack es la herramienta, el ebook es el entendimiento.
 
 **¿En qué formato viene?**
 PDF descargable con índice navegable. Lo recibes inmediatamente después del pago.

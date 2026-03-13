@@ -97,7 +97,7 @@ Para los benchmarks de industria, usa valores típicos de [INDUSTRIA] en México
 |-------|-----------|---------|
 | `[NOMBRE_EMPRESA]` | Razón social | Fundidora del Bajío SA de CV |
 | `[INDUSTRIA]` | Sector específico | Manufactura metalmecánica |
-| `[PERIODO]` | Periodo de las cifras | Enero-Diciembre 2024 |
+| `[PERIODO]` | Periodo de las cifras | Enero-Diciembre 2025 |
 | Los `$[MONTO]` | Cifras reales del balance y estado de resultados | 3,500,000 |
 
 ## Ejemplo de uso
@@ -106,7 +106,7 @@ Para los benchmarks de industria, usa valores típicos de [INDUSTRIA] en México
 DATOS DE LA EMPRESA:
 - Nombre: Panadería Don Miguel SA de CV
 - Industria: Alimentos - Panadería y repostería
-- Periodo: Enero-Diciembre 2024
+- Periodo: Enero-Diciembre 2025
 
 CIFRAS DEL BALANCE GENERAL:
 - Efectivo: $180,000

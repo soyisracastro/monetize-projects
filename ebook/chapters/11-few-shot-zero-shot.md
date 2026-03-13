@@ -1,4 +1,4 @@
-# Capitulo 11: Few-shot, Zero-shot y por que los ejemplos importan
+# Capitulo 11: La IA aprende como tus hijos: con ejemplos, no con discursos
 
 <!--
 Fuente: NUEVO

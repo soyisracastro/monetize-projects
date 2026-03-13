@@ -105,4 +105,4 @@ La diferencia no fue la herramienta. Fue entender cómo funciona.
 
 ### Si quieres ir más lejos
 
-Este concepto de darle el contexto correcto al modelo es exactamente lo que convierte una instrucción mediocre en una que te ahorra horas de trabajo. En el Pack de Prompts para Contadores, cada uno de los 24 prompts está diseñado con el contexto fiscal mexicano ya incorporado, para que no tengas que construirlo desde cero cada vez.
+Este concepto de darle el contexto correcto al modelo es exactamente lo que convierte una instrucción mediocre en una que te ahorra horas de trabajo. En el Pack de Prompts para Contadores, cada uno de los 25 prompts está diseñado con el contexto fiscal mexicano ya incorporado, para que no tengas que construirlo desde cero cada vez.

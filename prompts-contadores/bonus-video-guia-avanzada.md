@@ -42,7 +42,7 @@ Es la diferencia entre:
 2. **Configurar el GPT**
    - **Nombre:** "Asistente Fiscal MX" (o el nombre que quieran)
    - **Descripción:** "Contador Público mexicano especializado en análisis fiscal, nómina, IMSS y productividad para despachos contables"
-   - **Instrucciones (System Prompt):** Aquí va la magia — cargar las instrucciones base que combinen los mejores elementos de los 24 prompts
+   - **Instrucciones (System Prompt):** Aquí va la magia — cargar las instrucciones base que combinen los mejores elementos de los 25 prompts
 
 3. **Instrucciones base sugeridas para el GPT:**
 
@@ -73,6 +73,7 @@ TAREAS QUE PUEDES REALIZAR:
 - Planeación fiscal estratégica
 - Conciliación contable-fiscal
 - Interpretación de cartas invitación del SAT
+- Resumen de cambios en la Miscelánea Fiscal
 - Análisis de estados financieros
 - Cálculo de razones financieras
 - Proyección de flujo de efectivo
@@ -94,7 +95,7 @@ FORMATO PREFERIDO:
 ```
 
 4. **Subir archivos de conocimiento (Knowledge)**
-   - Subir el PDF de los 24 prompts como referencia
+   - Subir el PDF de los 25 prompts como referencia
    - Opcionalmente: subir tablas de ISN por estado, UMA vigente, tasas de impuestos
 
 5. **Configurar capacidades**
@@ -218,10 +219,10 @@ Reglas:
 - Los modelos mejoran cada pocos meses, lo que hoy es "peor" mañana puede ser "mejor"
 
 **Modelos específicos a mencionar (sin casarse con ninguno):**
-- OpenAI: GPT-4o, o3-mini (razonamiento)
-- Anthropic: Claude Sonnet 4, Claude Opus 4 (razonamiento profundo)
-- Google: Gemini 2.0 Flash, Gemini 2.5 Pro
-- Nota: Los nombres y versiones cambian frecuentemente
+- OpenAI: GPT-4.1, o3, o4-mini (razonamiento)
+- Anthropic: Claude Sonnet 4.6, Claude Opus 4.6 (razonamiento profundo)
+- Google: Gemini 2.5 Flash, Gemini 2.5 Pro
+- Nota: Los nombres y versiones cambian frecuentemente — consulta los sitios de referencia listados abajo para la información más actual
 
 ---
 
@@ -255,7 +256,7 @@ Reglas:
 
 | Herramienta | URL | Plan gratuito | Plan de pago |
 |-------------|-----|---------------|--------------|
-| ChatGPT | chat.openai.com | Sí (GPT-4o mini) | Plus $20 USD/mes |
+| ChatGPT | chatgpt.com | Sí (GPT-4.1 mini) | Plus $20 USD/mes |
 | Claude | claude.ai | Sí (limitado) | Pro $20 USD/mes |
 | Gemini | gemini.google.com | Sí (Gemini Flash) | Advanced $20 USD/mes (incluido en Google One AI) |
 | Copilot | copilot.microsoft.com | Sí (básico) | Pro $20 USD/mes |
@@ -270,12 +271,12 @@ Reglas:
 **Video A: "El error que cometen los contadores con ChatGPT"**
 - Hook: "Si abres ChatGPT y escribes 'ayúdame con impuestos', estás perdiendo el tiempo"
 - Contenido: Mostrar la diferencia entre un prompt genérico vs un prompt específico para contadores
-- CTA: "Tengo 24 prompts listos para ti — link en bio"
+- CTA: "Tengo 25 prompts listos para ti — link en bio"
 
 **Video B: "Calculé una liquidación en 2 minutos con IA"**
 - Hook: Pantalla dividida — lado izquierdo: Excel complicado / lado derecho: prompt + resultado
 - Contenido: Demostración en tiempo real del Prompt #12 (Liquidación y Finiquito)
-- CTA: "24 prompts como este — link en bio"
+- CTA: "25 prompts como este — link en bio"
 
 **Video C: "Lo que tu contador no te dice sobre la IA" (para atraer audiencia)**
 - Hook: "La IA no va a reemplazar a los contadores. Pero los contadores que usen IA van a reemplazar a los que no."
@@ -290,7 +291,7 @@ Reglas:
 **Video E: "3 prompts que todo contador debería tener"**
 - Hook: "Si eres contador y todavía no usas IA, estos 3 prompts te van a cambiar la vida"
 - Contenido: Mostrar los prompts #1 (CFDI), #12 (Liquidación) y #17 (Explicación simple)
-- CTA: "Los 24 prompts por $247 — link en bio"
+- CTA: "Los 25 prompts por $247 — link en bio"
 
 ### Video largo para YouTube / Curso (20-30 min)
 
@@ -325,7 +326,7 @@ Este video puede servir como:
 ## CÓMO ESTRUCTURAR EL BONUS EN LA OFERTA
 
 ### Opción A: Incluido en el producto base ($247 MXN)
-- Los 24 prompts en PDF
+- Los 25 prompts en PDF
 - Guía de inicio
 - **BONUS: 5 videos** (acceso por link privado de YouTube/Vimeo)
 - Posicionamiento: "Más valor por el mismo precio"
@@ -334,7 +335,7 @@ Este video puede servir como:
 
 ### Opción B: Producto escalonado (Recomendada)
 **Básico — $247 MXN**
-- 24 prompts en PDF
+- 25 prompts en PDF
 - Guía de inicio rápido
 
 **Pro — $497 MXN**
@@ -352,7 +353,7 @@ Este video puede servir como:
 
 ### Opción C: El video como lead magnet gratuito
 - Publicar el Video 5 (Comparativa) como contenido gratuito en YouTube
-- Al final del video: "Si quieres los 24 prompts listos para usar, están en el link de la descripción"
+- Al final del video: "Si quieres los 25 prompts listos para usar, están en el link de la descripción"
 - Funciona como embudo: Video gratis → Producto de pago
 
 ---

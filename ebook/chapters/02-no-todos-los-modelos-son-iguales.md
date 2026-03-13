@@ -135,4 +135,4 @@ La lección de Carlos no es que necesita pagar por el modelo más caro para todo
 
 ### Si quieres ir más lejos
 
-Saber qué modelo usar es el primer paso. El segundo es saber qué decirle. Los 24 prompts del Pack para Contadores están diseñados para funcionar con modelos de alta capacidad y sacarles el máximo provecho en tareas fiscales y contables reales. Cada prompt ya incorpora el nivel de contexto y especificidad que estos modelos necesitan para darte resultados que de verdad puedas usar en tu despacho.
+Saber qué modelo usar es el primer paso. El segundo es saber qué decirle. Los 25 prompts del Pack para Contadores están diseñados para funcionar con modelos de alta capacidad y sacarles el máximo provecho en tareas fiscales y contables reales. Cada prompt ya incorpora el nivel de contexto y especificidad que estos modelos necesitan para darte resultados que de verdad puedas usar en tu despacho.

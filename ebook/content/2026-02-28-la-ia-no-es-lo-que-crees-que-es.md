@@ -55,7 +55,7 @@ Pero si entiendes que en realidad es una máquina de predicción a la que hay qu
 
 Esa diferencia tiene nombre: *prompt*.
 
-No es casualidad que haya armado un pack de 24 prompts diseñados específicamente para el trabajo contable en México.
+No es casualidad que haya armado un pack de 25 prompts diseñados específicamente para el trabajo contable en México.
 
 Probados en mi despacho, no sacados de un video de YouTube.
 

@@ -15,7 +15,7 @@
 | 3 | 8 | El manual de tu despacho para la IA | `chapters/08-el-manual-para-la-ia.md` | Borrador |
 | 3 | 9 | Darle la información correcta | `chapters/09-darle-la-informacion-correcta.md` | Borrador |
 | 3 | 10 | Cuando la IA no sabe, enséñale tú | `chapters/10-cuando-la-ia-no-sabe.md` | Borrador |
-| 3 | 11 | Few-shot, Zero-shot y ejemplos | `chapters/11-few-shot-zero-shot.md` | Borrador |
+| 3 | 11 | La IA aprende como tus hijos: con ejemplos, no con discursos | `chapters/11-few-shot-zero-shot.md` | Borrador |
 | 4 | 12 | La IA no tiene RFC | `chapters/12-la-ia-no-tiene-rfc.md` | Borrador |
 | 4 | 13 | La IA es poderosa como inocente | `chapters/13-poderosa-como-inocente.md` | Borrador |
 | 4 | 14 | Sesgo, ética y responsabilidad | `chapters/14-sesgo-etica-responsabilidad.md` | Borrador |

@@ -2,7 +2,7 @@
 
 Estos son cinco prompts simplificados, uno por cada categoría del Pack de Prompts de Productividad para Contadores Mexicanos. Son funcionales y puedes usarlos hoy mismo con cualquier modelo de IA.
 
-Sin embargo, son versiones reducidas. El pack completo incluye 24 prompts con más variables, más detalle, validaciones adicionales y tips profesionales que hacen la diferencia entre una respuesta genérica y una respuesta de nivel profesional.
+Sin embargo, son versiones reducidas. El pack completo incluye 25 prompts con más variables, más detalle, validaciones adicionales y tips profesionales que hacen la diferencia entre una respuesta genérica y una respuesta de nivel profesional.
 
 ---
 
@@ -193,4 +193,4 @@ Para cada tarea incluye una fecha límite sugerida y quién es responsable (cont
 
 ---
 
-Estos cinco prompts te dan una idea clara de cómo trabaja cada categoría. Si con estas versiones simplificadas ya obtienes resultados útiles, imagina lo que puedes lograr con los 24 prompts completos del pack, cada uno con todas las variables, validaciones y tips profesionales incluidos.
+Estos cinco prompts te dan una idea clara de cómo trabaja cada categoría. Si con estas versiones simplificadas ya obtienes resultados útiles, imagina lo que puedes lograr con los 25 prompts completos del pack, cada uno con todas las variables, validaciones y tips profesionales incluidos.

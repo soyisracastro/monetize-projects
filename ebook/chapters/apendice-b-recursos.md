@@ -44,6 +44,6 @@ Fuente: NUEVO
 
 - **columna13.club** -- [columna13.club](https://columna13.club) -- Mi newsletter semanal donde escribo sobre IA aplicada a la contabilidad. Es gratuita y es donde publico primero todo lo que descubro, pruebo y opino sobre estas herramientas. Si te gusto este libro, ahi sigo la conversacion.
 
-- **Pack de Prompts de Productividad para Contadores Mexicanos** -- Una coleccion de 24 prompts listos para copiar, pegar y usar en tu dia a dia como contador. Cubren desde redaccion de correos hasta analisis de estados financieros. Disponible en columna13.club.
+- **Pack de Prompts de Productividad para Contadores Mexicanos** -- Una coleccion de 25 prompts listos para copiar, pegar y usar en tu dia a dia como contador. Cubren desde redaccion de correos hasta analisis de estados financieros. Disponible en columna13.club.
 
 - **Taller de IA para Contadores (abril 2026)** -- Un programa practico de 12 dias donde trabajamos juntos en aplicar IA a tareas reales de contabilidad. No es teoria: es hacer. Los detalles y la inscripcion estan en columna13.club.

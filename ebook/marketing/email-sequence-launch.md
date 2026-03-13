@@ -86,7 +86,7 @@ Lo escribí porque estoy cansado de ver dos tipos de contadores: los que le tien
 
 — Isca
 
-P.D. Si ya tienes ganas de tener las herramientas además de los conceptos, hay un bundle con el Pack de 24 Prompts por $597 MXN (te ahorras $197). Lo encuentras en la página del ebook.
+P.D. Si ya tienes ganas de tener las herramientas además de los conceptos, hay un bundle con el Pack de 25 Prompts por $597 MXN (te ahorras $197). Lo encuentras en la página del ebook.
 
 ---
 
@@ -140,7 +140,7 @@ P.D. Todo lo que lees en el newsletter son conceptos sueltos. El ebook es el rom
 ## Email 4 — Día 7: Última Oportunidad + Bundle
 
 ### Asunto
-Última semana: el ebook + los 24 prompts juntos (ahorras $197)
+Última semana: el ebook + los 25 prompts juntos (ahorras $197)
 
 ### Asunto alternativo
 Entender la IA + usarla: la combinación completa
@@ -157,19 +157,19 @@ Y tiene todo el sentido.
 
 El ebook te explica los conceptos: qué son los tokens, cómo funciona el contexto, por qué importa la estructura de un prompt, cuándo la IA puede fallar.
 
-El Pack de Prompts te da 24 instrucciones profesionales listas para usar en tu despacho: análisis fiscal, nómina, IMSS, comunicación con clientes, productividad.
+El Pack de Prompts te da 25 instrucciones profesionales listas para usar en tu despacho: análisis fiscal, nómina, IMSS, comunicación con clientes, productividad.
 
 Juntos, son la combinación completa: **entiendes la herramienta Y la usas desde el primer día**.
 
 Por eso armé el bundle:
 
-**Ebook + Pack de 24 Prompts: $597 MXN** (precio normal: $794 — te ahorras $197)
+**Ebook + Pack de 25 Prompts: $597 MXN** (precio normal: $794 — te ahorras $197)
 
 [BOTÓN: Quiero el Bundle — $597 MXN]
 
 El bundle incluye:
 - Ebook "IA para Contadores" (17 capítulos + 3 apéndices)
-- Pack de 24 Prompts Profesionales para Contadores Mexicanos
+- Pack de 25 Prompts Profesionales para Contadores Mexicanos
 - Guía de inicio rápido del Pack
 - Meta-prompt para crear tus propios prompts
 - Actualizaciones futuras de ambos productos

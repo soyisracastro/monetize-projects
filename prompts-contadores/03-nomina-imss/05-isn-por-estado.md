@@ -109,7 +109,7 @@ IMPORTANTE: Las tasas de ISN varían por estado y pueden cambiar cada año fisca
 |-------|-----------|---------|
 | `[RAZON_SOCIAL]` | Nombre de la empresa | Grupo Industrial del Norte SA de CV |
 | `[ESTADO(S)]` | Dónde tiene nómina | Nuevo León y Tamaulipas |
-| `[MES_Y_AÑO]` | Periodo | Enero 2025 |
+| `[MES_Y_AÑO]` | Periodo | Enero 2026 |
 | Los montos | Cifras de la nómina del mes | 285,000 |
 
 ## Ejemplo de uso
@@ -118,7 +118,7 @@ IMPORTANTE: Las tasas de ISN varían por estado y pueden cambiar cada año fisca
 DATOS DEL PATRÓN:
 - Razón social: Servicios Tecnológicos de Occidente SA de CV
 - Estados: Jalisco y Ciudad de México
-- Periodo: Febrero 2025
+- Periodo: Febrero 2026
 - Frecuencia: Mensual
 
 NÓMINA - JALISCO (8 trabajadores):
@@ -138,6 +138,10 @@ Total: $137,000
 
 ## Tips profesionales
 
-- **Las tasas de ISN en México van del 1% al 4%** dependiendo del estado. Los estados con tasas más altas (2025): CDMX (3%), Nuevo León (3%), Quintana Roo (3%). Los más bajos: Durango (1%), Hidalgo (variable). Siempre verifica la tasa vigente en el portal de hacienda estatal.
+- **Las tasas de ISN en México van del 2.40% al 5%** dependiendo del estado y concepto. Referencia de tasas 2026 (verifica siempre en el portal de hacienda estatal, ya que cambian cada año):
+  - **4%**: CDMX (subió de 3% en 2025), Chihuahua (subió de 3%), Baja California, Quintana Roo, Tabasco
+  - **3.75%**: Yucatán (subió de 3%)
+  - **3%**: Aguascalientes, Baja California Sur (subió de 2%), Campeche, Chiapas, Coahuila, Colima (subió de 2%), Durango, Estado de México, Guanajuato, Guerrero, Hidalgo, Jalisco (5% para asimilados), Michoacán, Morelos, Nayarit, Nuevo León, Oaxaca, Puebla, Querétaro, San Luis Potosí, Sinaloa, Sonora, Tamaulipas, Tlaxcala, Veracruz, Zacatecas
+  - **2.5%-2.4%**: Algunos estados mantienen tasas menores para ciertos conceptos
 - **Cuidado con los honorarios asimilados.** Algunos estados los incluyen en la base del ISN y otros no. Es una de las diferencias más comunes entre entidades.
 - **Si tu cliente abre operaciones en un nuevo estado**, recuerda inscribirlo en la hacienda estatal correspondiente. El ISN es responsabilidad del patrón y la omisión genera multas.

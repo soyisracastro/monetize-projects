@@ -1,6 +1,6 @@
 # Email para Compradores del Pack de Prompts
 
-**Audiencia:** Personas que ya compraron el Pack de 24 Prompts Profesionales.
+**Audiencia:** Personas que ya compraron el Pack de 25 Prompts Profesionales.
 **Tono:** Exclusivo, recompensa la lealtad, sin presión.
 **Código de descuento:** YAERES ($197 MXN en lugar de $297 MXN)
 
@@ -12,13 +12,13 @@
 Ya tienes las herramientas. Ahora entiende el motor.
 
 ### Asunto alternativo
-Para ti que ya tienes los 24 prompts: precio exclusivo
+Para ti que ya tienes los 25 prompts: precio exclusivo
 
 ### Cuerpo
 
 Hola,
 
-Tú ya tienes el Pack de Prompts. 24 instrucciones profesionales que probablemente ya estás usando en tu despacho.
+Tú ya tienes el Pack de Prompts. 25 instrucciones profesionales que probablemente ya estás usando en tu despacho.
 
 Pero déjame hacerte una pregunta honesta:
 
@@ -43,7 +43,7 @@ Lo que cubre:
 - Qué son las alucinaciones y cómo detectarlas antes de que te metan en problemas
 - Cuándo la IA está razonando y cuándo está adivinando
 - Los límites reales: qué puedes delegarle y qué nunca deberías
-- Cómo crear tus propios prompts cuando los 24 que ya tienes no cubran algo específico
+- Cómo crear tus propios prompts cuando los 25 que ya tienes no cubran algo específico
 
 Cada capítulo con analogías contables, ejercicios prácticos y la sección "Mito vs Realidad" para desmontar lo que todos creen.
 

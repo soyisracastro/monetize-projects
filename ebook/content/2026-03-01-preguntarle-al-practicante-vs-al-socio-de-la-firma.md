@@ -61,7 +61,7 @@ Hablando del pack: si todavía no lo tienes, aquí está.
 
 **[**[**Prompts de Productividad para Contadores Mexicanos — $249**](https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fdigital-files%2Fmanage%3Fid%3D69a160e22f4e636bd0d1becd&sourceInfoType=folder&sourceInfoOrigin=69a160e22f4e636bd0d1becd)**]**
 
-24 prompts probados en el despacho. Diseñados para que el modelo, sea cual sea, entienda exactamente lo que necesitas.
+25 prompts probados en el despacho. Diseñados para que el modelo, sea cual sea, entienda exactamente lo que necesitas.
 
 — Isca
 
