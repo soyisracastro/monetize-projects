@@ -1,0 +1,142 @@
+# Capitulo 11: Few-shot, Zero-shot y por que los ejemplos importan
+
+<!--
+Fuente: NUEVO
+Concepto principal: Few-shot vs Zero-shot prompting
+Terminos para glosario: Zero-shot, Few-shot, One-shot, Ejemplo, In-context learning
+-->
+
+Cuando abri el despacho y contrate a mi primera auxiliar contable, le pedi algo que parecia sencillo: clasificar los movimientos bancarios de un cliente. Le di el estado de cuenta y le dije "clasifica cada movimiento en la cuenta contable que le corresponda". Me fui a una junta y cuando regrese, la clasificacion era un desastre. No porque ella fuera mala. Era lista y tenia buenas bases contables. Pero tenia un problema: no conocia MI sistema de clasificacion.
+
+En su universidad le ensenaron un catalogo de cuentas generico. En el despacho anterior donde trabajo usaban otra estructura. Y en mi despacho, las cuentas se manejan de una forma particular: los gastos de representacion van en una subcuenta especifica, las comisiones bancarias se separan por tipo, los ingresos por cobranza se registran distinto a los ingresos por facturacion directa. Nada de eso es estandar. Es como funciona mi despacho.
+
+¿Que hice la segunda vez? Le di tres movimientos ya clasificados por mi. "Mira, este deposito de $45,000 de Distribuidora Martinez va en Clientes - Cobranza. Este cargo de $1,200 del banco va en Gastos Financieros - Comisiones Bancarias. Este pago de $8,500 a Telmex va en Gastos de Operacion - Telecomunicaciones." Con esos tres ejemplos, clasifico los demas 47 movimientos perfectamente. No porque hubiera aprendido algo nuevo. Sino porque ahora entendia el patron que yo necesitaba.
+
+Con la IA pasa exactamente lo mismo. Y la tecnica tiene nombre.
+
+## Tres formas de pedir lo mismo
+
+Cuando le das una instruccion a un modelo de IA, la cantidad de ejemplos que incluyes cambia radicalmente la calidad y consistencia de la respuesta. No es un detalle menor. Es una de las tecnicas mas poderosas que existen en el uso practico de estos modelos, y no requiere ningun conocimiento tecnico para aplicarla.
+
+Hay tres niveles, y vamos de menos a mas.
+
+**Zero-shot: sin ejemplos.** Le pides al modelo que haga algo sin mostrarle como quieres que lo haga. Solo das la instruccion y confias en que el modelo, con todo su entrenamiento general, figure lo que necesitas.
+
+"Clasifica la siguiente operacion contable: Pago de renta mensual de oficina por $12,000."
+
+El modelo va a clasificarla. Probablemente bien. Pero va a usar su propio criterio para decidir el formato, el nivel de detalle y la estructura de la clasificacion. Puede decirte "Gasto de operacion" o "Gasto administrativo - Arrendamiento" o "Cuenta 6100 - Rentas" o cualquier otra variacion. Todas correctas, ninguna necesariamente alineada con tu catalogo de cuentas.
+
+**One-shot: un ejemplo.** Le das un ejemplo de como clasificaste una operacion y luego le pides que clasifique otra.
+
+"Clasifica la siguiente operacion contable usando el formato del ejemplo.
+Ejemplo: 'Compra de laptop por $18,000' -> Activo Fijo / Equipo de Computo / $18,000.
+Ahora clasifica: 'Pago de renta mensual de oficina por $12,000.'"
+
+Con un solo ejemplo, el modelo ya entendio tres cosas: que quieres la categoria general, la subcategoria y el monto. La respuesta va a seguir ese patron. Un ejemplo, y el formato ya esta controlado.
+
+**Few-shot: varios ejemplos.** Le das entre dos y cinco ejemplos que cubran diferentes tipos de operaciones, y luego le pides que clasifique nuevas.
+
+"Clasifica las siguientes operaciones contables usando el formato de los ejemplos.
+
+Ejemplos:
+- 'Compra de laptop por $18,000' -> Activo Fijo / Equipo de Computo / $18,000
+- 'Pago de renta mensual de oficina por $12,000' -> Gastos de Operacion / Arrendamiento / $12,000
+- 'Deposito de cliente Distribuidora Martinez por $45,000' -> Clientes / Cobranza / $45,000
+- 'Pago de nomina quincenal por $67,000' -> Gastos de Operacion / Sueldos y Salarios / $67,000
+
+Ahora clasifica estas operaciones:
+1. Pago de luz por $3,400
+2. Compra de escritorio por $9,500
+3. Deposito de cliente Comercial del Norte por $28,000
+4. Pago de honorarios al abogado por $15,000"
+
+Ahora el modelo no solo entiende el formato. Entiende la logica de clasificacion. Sabe que las compras de mobiliario van en Activo Fijo, que los pagos de servicios van en Gastos de Operacion, que los depositos de clientes van en Clientes. Y va a aplicar esa logica de forma consistente a las nuevas operaciones.
+
+> **Concepto Clave**
+> **In-context learning (Aprendizaje en contexto):** Es la capacidad de un modelo de IA para aprender un patron o regla a partir de ejemplos incluidos directamente en el prompt, sin necesidad de modificar el modelo ni entrenarlo. Le muestras como quieres que trabaje, y adapta su comportamiento a esos ejemplos dentro de la misma conversacion.
+
+## La analogia del auxiliar contable (y por que es perfecta)
+
+Lo que acabo de describir no es nada nuevo para ti. Es literalmente como entrenas a cualquier persona nueva en tu despacho.
+
+Si le dices a un auxiliar "clasifica los movimientos del estado de cuenta" sin darle ningun ejemplo, va a usar su criterio general. Quiza lo haga bien, quiza no. Pero casi seguro no va a coincidir con tu forma de trabajar. Eso es zero-shot.
+
+Si le muestras una clasificacion completada y le dices "hazlo asi", ya tiene un punto de referencia. Va a tratar de replicar el patron. Pero con un solo ejemplo, puede haber ambiguedad en los casos que no se parecen al ejemplo que le diste. Eso es one-shot.
+
+Si le muestras tres o cuatro clasificaciones que cubren distintos tipos de movimientos --un ingreso, un gasto operativo, un activo fijo, un gasto financiero-- ahora entiende el sistema. No solo el formato, sino la logica detras de las decisiones. Eso es few-shot.
+
+La IA funciona igual. No porque "aprenda" en el sentido humano. Sino porque los ejemplos le dan un patron concreto para seguir dentro de esa conversacion. El modelo usa esos ejemplos como referencia para generar respuestas que sean consistentes con lo que le mostraste. Los tecnicos lo llaman "in-context learning", pero tu ya lo conocias como "entrenar al auxiliar con ejemplos".
+
+## Cuando usar cada uno
+
+No siempre necesitas ejemplos. Y a veces, dar demasiados es contraproducente. La regla practica es esta:
+
+**Usa zero-shot cuando la tarea es clara y universal.** Si lo que necesitas es algo que cualquier profesional haria de la misma forma, no necesitas ejemplos. "Resume este articulo de la Ley del ISR en tres bullets." "Traduce este parrafo al ingles." "Explica que es el coeficiente de utilidad." Estas tareas no requieren tu estilo personal ni tu sistema particular. El modelo sabe hacerlas con su entrenamiento general.
+
+**Usa one-shot cuando necesitas establecer un formato especifico.** Si quieres que la respuesta siga una estructura particular que no es obvia, un ejemplo basta. "Redacta un correo al cliente informandole de su saldo pendiente. Aqui tienes un ejemplo del tono que usamos en el despacho: [ejemplo]. Ahora redacta uno para el cliente Garcia con un saldo de $23,000." Un ejemplo define el tono, la formalidad, la estructura. Suficiente para que el modelo replique el patron.
+
+**Usa few-shot cuando la tarea involucra clasificacion, juicio o consistencia.** Aqui es donde los ejemplos brillan. Cada vez que necesites que el modelo tome decisiones que sigan tu criterio especifico --clasificar operaciones segun tu catalogo, categorizar CFDIs segun el tipo de gasto, extraer datos de un formato particular-- dale entre tres y cinco ejemplos. Esos ejemplos son los que le ensenaran tu logica, no la logica generica del modelo.
+
+**La regla de oro: tres a cinco ejemplos es el punto optimo.** Menos de tres y puede haber ambiguedad. Mas de cinco y empiezas a desperdiciar espacio en la ventana de contexto (Capitulo 5) y tokens (Capitulo 4) sin ganar precision significativa. Hay excepciones, pero para el 90% de las tareas contables, tres a cinco ejemplos es lo que necesitas.
+
+## Few-shot en tareas reales del despacho
+
+Vamos a salir de la teoria y ver como esto funciona en tareas que haces todas las semanas.
+
+**Clasificacion de CFDIs por tipo de gasto.** Tienes 50 CFDIs de un cliente y necesitas clasificarlos para la declaracion. En vez de clasificarlos uno por uno, le das al modelo tres ejemplos: "CFDI de Office Depot por $3,200 -> Material de oficina. CFDI de Gasolinera Pemex por $1,500 -> Combustible y lubricantes. CFDI de Restaurante La Parroquia por $890 -> Gastos de representacion." Le pasas los demas 47 y el modelo los clasifica siguiendo tu criterio. No el criterio generico de un libro de texto, sino el tuyo.
+
+**Extraccion de datos de XMLs.** Tienes los archivos XML de los CFDIs de un cliente y necesitas extraer ciertos campos para tu conciliacion. Le muestras al modelo dos ejemplos de lo que necesitas: "De este XML, extrae: RFC emisor, fecha, subtotal, IVA, total, y metodo de pago. Formato: una fila por CFDI, separado por comas." Le das los dos ejemplos resueltos y luego le pasas el lote. La extraccion sale consistente porque el modelo vio exactamente que campos y que formato esperas.
+
+**Redaccion de respuestas a clientes.** Tienes un estilo de comunicacion en tu despacho. Quiza mas formal, quiza mas directo, quiza con un formato especifico de saludo y cierre. En vez de explicarle al modelo como quieres que escriba (lo cual es sorprendentemente dificil), le muestras dos correos reales que ya mandaste. "Aqui tienes dos ejemplos de como respondemos consultas de clientes. Ahora redacta una respuesta para el cliente Gonzalez que pregunta sobre los requisitos para deducir gastos medicos." El modelo replica el tono, la estructura y el nivel de detalle de tus ejemplos.
+
+**Generacion de minutas consistentes.** Si llevas minutas de reuniones con clientes, le das un ejemplo de una minuta terminada y le pides que genere la siguiente con los puntos que le dictes. El formato, los encabezados, el nivel de detalle y hasta el tono se replican automaticamente.
+
+## El truco esta en elegir buenos ejemplos
+
+No cualquier ejemplo sirve igual. Si los tres ejemplos que le das son tres gastos de operacion muy parecidos entre si, el modelo no va a saber que hacer cuando le llegue un activo fijo o un ingreso. Los buenos ejemplos cubren la diversidad de casos que el modelo va a enfrentar.
+
+Piensa en como le ensenan a un auditor junior. No le muestras tres veces la misma partida. Le muestras una partida de ingresos, una de gastos, una de activo, una de pasivo. Asi entiende que hay diferentes categorias y aprende a distinguir entre ellas.
+
+Lo mismo aplica aqui. Si vas a clasificar movimientos bancarios, tus ejemplos deberian incluir al menos: un ingreso, un gasto operativo, un gasto financiero y, si aplica, un movimiento de activo fijo. Con esos cuatro ejemplos, el modelo tiene suficiente diversidad para clasificar correctamente movimientos que nunca ha visto pero que caen en alguna de esas categorias.
+
+Y un punto importante que conecta con capitulos anteriores: los ejemplos ocupan espacio en la ventana de contexto. Cada ejemplo que agregas consume tokens. Tres ejemplos bien elegidos son mas efectivos que diez ejemplos redundantes. No es cuantos, es cuales.
+
+## En la Practica
+
+La contadora Patricia tiene un despacho en Guadalajara y atiende 25 clientes, la mayoria personas fisicas con actividad empresarial. Cada mes, una de sus tareas mas tediosas es clasificar los movimientos bancarios de sus clientes para la contabilidad mensual. Un cliente promedio tiene entre 30 y 60 movimientos por mes.
+
+Antes, Patricia clasificaba todo manualmente. Le tomaba entre 20 y 30 minutos por cliente. Multiplica eso por 25 clientes y tienes mas de diez horas al mes solo en clasificacion.
+
+Un dia probo pedirle al modelo que clasificara los movimientos sin darle ejemplos. Zero-shot. El resultado fue un desastre de inconsistencias: a veces usaba "Gastos Generales", a veces "Gastos de Administracion", a veces "Gastos Operativos" para el mismo tipo de movimiento. Las categorias cambiaban de un cliente a otro. No servia.
+
+Luego probo con few-shot. Para cada cliente, antes de pasar el lote de movimientos, incluia cuatro movimientos ya clasificados por ella con su propio catalogo de cuentas. El resultado fue otro mundo. Las clasificaciones salian consistentes, alineadas con su catalogo, y en el formato que necesitaba para capturar directamente en su sistema contable.
+
+Ahora Patricia dedica dos minutos por cliente eligiendo los cuatro ejemplos y revisando el resultado, en lugar de treinta minutos clasificando manualmente. Sigue revisando todo, porque como buena contadora sabe que la responsabilidad es suya. Pero el punto de partida es un 90% de la clasificacion ya hecha correctamente.
+
+El detalle que marco la diferencia: los cuatro ejemplos que elige siempre son de categorias distintas. Un ingreso por cobranza, un gasto de operacion, un gasto financiero y un pago a proveedor. Con esa diversidad, el modelo entiende su sistema completo.
+
+## Mito vs Realidad
+
+- **Mito:** "Si le doy muchos ejemplos, la IA va a dar mejores respuestas."
+- **Realidad:** Hay un punto de rendimientos decrecientes. Tres a cinco ejemplos bien elegidos suelen ser suficientes. Mas alla de eso, estas gastando tokens y espacio de contexto sin mejorar significativamente la calidad. Es como explicarle algo a un auxiliar: si despues de cuatro ejemplos no entendio el patron, el quinto probablemente no va a cambiar nada. Mejor revisa si tus ejemplos son claros y diversos.
+
+- **Mito:** "Few-shot solo sirve para tareas simples como clasificacion."
+- **Realidad:** Few-shot funciona para cualquier tarea donde necesites consistencia: redaccion de correos, generacion de reportes, extraccion de datos, analisis comparativos, hasta generacion de opiniones tecnicas con un formato especifico. Si puedes mostrar un ejemplo de lo que quieres, el modelo puede replicar el patron. La complejidad de la tarea no limita la tecnica, solo cambia la complejidad de los ejemplos que necesitas dar.
+
+---
+
+### Lo que te llevas
+
+- Zero-shot es pedir sin ejemplos, one-shot es dar un ejemplo, few-shot es dar varios. La diferencia no es solo de cantidad: es de consistencia y alineacion con tu forma de trabajar. Entre mas necesites que el modelo siga tu criterio especifico, mas ejemplos necesitas darle.
+- Three a cinco ejemplos es el punto optimo para la mayoria de las tareas contables. Menos puede generar ambiguedad, mas desperdicia contexto. Lo importante no es cuantos ejemplos, sino que cubran la diversidad de casos que el modelo va a enfrentar.
+- Few-shot se potencia cuando lo combinas con el framework RCIF del Capitulo 9. Dale al modelo un rol, contexto, instruccion, formato y ademas incluye ejemplos. Esa combinacion es lo que separa un resultado generico de uno que parece hecho por alguien de tu equipo.
+
+### Pruebalo tu mismo
+
+1. Elige una tarea repetitiva que hagas regularmente en el despacho: clasificar movimientos bancarios, categorizar CFDIs, redactar correos a clientes, o extraer datos de documentos. Abre un chat con cualquier modelo de IA y pidele que haga esa tarea sin darle ningun ejemplo. Observa el resultado.
+2. Ahora, en un chat nuevo, haz la misma solicitud pero antes incluye tres ejemplos resueltos por ti. Asegurate de que los ejemplos cubran diferentes tipos de casos (no tres ejemplos iguales). Observa como la respuesta cambia en formato, consistencia y alineacion con tu criterio.
+3. Compara ambos resultados. Fijate especialmente en la consistencia: ¿el modelo uso las mismas categorias? ¿El formato es uniforme? ¿Las decisiones de clasificacion siguen tu logica o la logica generica del modelo? Esa diferencia es lo que te da few-shot.
+
+### Si quieres ir mas lejos
+
+La tecnica de few-shot es especialmente poderosa para tareas que haces todas las semanas de la misma forma. El reto es que construir buenos ejemplos para cada tarea toma tiempo la primera vez. El Pack de Prompts ya trae esa estructura resuelta: prompts con el framework RCIF del Capitulo 9 y con ejemplos integrados para las tareas mas comunes del despacho, listos para que los adaptes con los datos de tus clientes.
