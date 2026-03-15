@@ -67,7 +67,7 @@ La clave es saber cuándo necesitas cada modo.
 
 ## En la Práctica
 
-Diana es contadora en un despacho mediano en la Ciudad de México. Tiene dos tareas pendientes esta semana.
+Diana es contadora en un despacho mediano en la Ciudad de México. Tiene dos tareas pendientes está semana.
 
 La primera: redactar la respuesta a un requerimiento del SAT. A su cliente le están pidiendo documentación soporte de una deducción que el SAT consideró improcedente. Esto necesita precisión quirúrgica. Cada palabra importa. Los fundamentos legales deben ser exactos. El tono debe ser formal y técnico. Diana necesita que la IA le dé una respuesta consistente, y si la tiene que regenerar porque quiere ajustar un párrafo, no quiere que el modelo le cambie toda la estructura.
 
@@ -87,7 +87,7 @@ Pero saber que existe te da tres ventajas enormes:
 
 Primero, dejas de frustrarte cuando la IA te da respuestas diferentes a la misma pregunta. Ya sabes por qué pasa. No es un bug, es un feature.
 
-Segundo, puedes compensar con el prompt. Si necesitas respuestas consistentes y no puedes bajar la temperatura, le dices al modelo algo como: "Dame una respuesta formal y técnica. No improvises. Cíñete estrictamente a lo que establece la ley." Esas instrucciones empujan al modelo hacia palabras más predecibles, imitando el efecto de una temperatura baja.
+Segundo, puedes compensar con el prompt. Si necesitas respuestas consistentes y no puedes bajar la temperatura, le dices al modelo algo como: "Dame una respuesta formal y técnica. No improvises. Cíñete estrictamente a lo que establece la ley." Esas instrucciones empujan al modelo hacía palabras más predecibles, imitando el efecto de una temperatura baja.
 
 Si necesitas creatividad, le dices: "Dame cinco enfoques diferentes para resolver este caso. No te limites al más obvio. Incluye opciones poco convencionales." Eso empuja al modelo a explorar opciones menos probables, como si subieras la temperatura desde el prompt.
 
@@ -113,8 +113,8 @@ Tercero, si algún día usas la IA a través de una API, como vimos en el Capít
 
 1. Abre cualquier modelo de IA y escríbele exactamente esto: "Redacta un párrafo de 3 oraciones explicando por qué una persona moral debe presentar su declaración anual de ISR." Copia la respuesta.
 2. Abre un chat nuevo con el mismo modelo y pega exactamente la misma instrucción. Compara las dos respuestas. Si son diferentes (y probablemente lo serán), ya estás viendo el efecto de la temperatura.
-3. Ahora prueba a agregar esta instrucción al inicio: "Responde de forma estrictamente técnica y formal. No parafrasees, usa los términos exactos de la ley." Nota cómo la respuesta se vuelve más predecible y "rígida", como si hubieras bajado la temperatura desde el prompt.
+3. Ahora prueba a agregar está instrucción al inicio: "Responde de forma estrictamente técnica y formal. No parafrasees, usa los términos exactos de la ley." Nota cómo la respuesta se vuelve más predecible y "rígida", como si hubieras bajado la temperatura desde el prompt.
 
 ### Si quieres ir más lejos
 
-En el Pack de Prompts para Contadores, cada prompt ya tiene recomendaciones de cuánta rigidez o flexibilidad pedirle al modelo según el tipo de tarea. Los prompts fiscales están diseñados para producir respuestas consistentes y verificables, mientras que los de estrategia y comunicación le dan espacio al modelo para explorar opciones. Así no tienes que recordar esta configuración cada vez que abres un chat.
+En el Pack de Prompts para Contadores, cada prompt ya tiene recomendaciones de cuánta rigidez o flexibilidad pedirle al modelo según el tipo de tarea. Los prompts fiscales están diseñados para producir respuestas consistentes y verificables, mientras que los de estrategia y comunicación le dan espacio al modelo para explorar opciones. Así no tienes que recordar está configuración cada vez que abres un chat.

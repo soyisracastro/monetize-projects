@@ -1,4 +1,4 @@
-# Capitulo 1: La IA no es lo que crees que es
+# Capítulo 1: La IA no es lo que crees que es
 
 <!--
 Fuente: Newsletter #1
@@ -53,7 +53,7 @@ Y esto importa para ti como contador porque significa que la IA que conoces hoy 
 
 Hoy hay varios jugadores importantes en el mundo de los LLMs, y vale la pena que los conozcas al menos de nombre, no porque debas casarte con alguno, sino porque vas a escucharlos constantemente y necesitas contexto.
 
-**OpenAI** es la empresa detrás de ChatGPT y los modelos GPT. Fueron los primeros en llevar esta tecnología al público general y siguen siendo los más conocidos. Sus modelos más recientes de la familia GPT y la serie "o" están entre los más capaces del mercado.
+**OpenAI** es la empresa detrás de ChatGPT y los modelos GPT. Fueron los primeros en llevar está tecnología al público general y siguen siendo los más conocidos. Sus modelos más recientes de la familia GPT y la serie "o" están entre los más capaces del mercado.
 
 **Anthropic** creó Claude. Su enfoque ha sido desarrollar modelos que sean más seguros y que sigan instrucciones con mayor precisión. Si alguna vez sientes que un modelo "te entiende mejor" cuando le das instrucciones largas y detalladas, probablemente estás usando Claude.
 
@@ -61,7 +61,7 @@ Hoy hay varios jugadores importantes en el mundo de los LLMs, y vale la pena que
 
 **Meta** (la empresa detrás de Facebook) tomó un camino diferente: sus modelos Llama son de código abierto. Esto significa que cualquier empresa o desarrollador puede tomarlos, modificarlos y usarlos libremente. Esto ha democratizado el acceso a la tecnología de maneras que nadie anticipó.
 
-Y hay más: Mistral desde Francia, DeepSeek desde China, y docenas de modelos especializados que aparecen cada semana. El punto no es que memorices esta lista, como veremos en el Capítulo 2, los modelos cambian constantemente. El punto es que entiendas que no existe "la IA" como una sola cosa. Existen muchos modelos, de muchas empresas, con diferentes capacidades. Elegir cuál usar es una decisión que importa.
+Y hay más: Mistral desde Francia, DeepSeek desde China, y docenas de modelos especializados que aparecen cada semana. El punto no es que memorices está lista, como veremos en el Capítulo 2, los modelos cambian constantemente. El punto es que entiendas que no existe "la IA" como una sola cosa. Existen muchos modelos, de muchas empresas, con diferentes capacidades. Elegir cuál usar es una decisión que importa.
 
 ## Por qué entender esto es más valioso que aprender cualquier herramienta
 
@@ -95,7 +95,7 @@ La diferencia no fue la herramienta. Fue entender cómo funciona.
 
 - La IA que usas hoy no piensa ni entiende: predice la siguiente palabra más probable con base en patrones aprendidos. Eso la hace poderosa, pero también predecible si sabes cómo funciona.
 - Entender el concepto de cómo funciona un LLM te da una ventaja que no caduca, a diferencia de aprender a usar una herramienta específica que cambia su interfaz cada mes.
-- La calidad de lo que recibes de la IA depende directamente de la calidad del contexto que le das. Si le das instrucciones vagas, obtienes respuestas vagas. Esto no es un defecto de la tecnología, es una característica que puedes aprender a usar a tu favor.
+- La calidad de lo que recibes de la IA depende directamente de la calidad del contexto que le das. Si le das instrucciones vagas, obtienes respuestas vagas. Esto no es un defecto de la tecnología, es una carácterística que puedes aprender a usar a tu favor.
 
 ### Pruébalo tú mismo
 

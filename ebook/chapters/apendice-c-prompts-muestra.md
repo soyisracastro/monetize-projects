@@ -18,7 +18,7 @@ Analiza los siguientes comprobantes fiscales y genera un reporte con observacion
 DATOS DEL CONTRIBUYENTE:
 - RFC: [RFC_DEL_CLIENTE]
 - Régimen fiscal: [REGIMEN_FISCAL]
-- Periodo de revisión: [MES_Y_AÑO]
+- Período de revisión: [MES_Y_AÑO]
 
 DATOS DE LOS CFDI A REVISAR:
 [PEGAR_AQUI_RESUMEN_DE_CFDIS]
@@ -72,7 +72,7 @@ CAPITAL CONTABLE:
 - Resultado del ejercicio: $[MONTO]
 - Total capital: $[MONTO]
 
-ESTADO DE RESULTADOS periodo [PERIODO]:
+ESTADO DE RESULTADOS período [PERIODO]:
 - Ingresos netos: $[MONTO]
 - Costo de ventas: $[MONTO]
 - Gastos de operación: $[MONTO]
@@ -84,7 +84,7 @@ GENERA:
 3. Tres recomendaciones concretas ordenadas por impacto
 ```
 
-**La versión completa en el pack incluye:** 14 indicadores financieros con semáforo visual, análisis comparativo contra periodo anterior con detección de variaciones significativas, y ciclo de conversión de efectivo con días de cobro, inventario y pago.
+**La versión completa en el pack incluye:** 14 indicadores financieros con semáforo visual, análisis comparativo contra período anterior con detección de variaciones significativas, y ciclo de conversión de efectivo con días de cobro, inventario y pago.
 
 ---
 
@@ -158,7 +158,7 @@ Redacta un correo que:
 
 ## 5. Productividad: Checklist de Cierre Mensual
 
-**Cuándo usarlo:** Cuando empieza el periodo de cierre del mes y necesitas un listado ordenado de todo lo que tienes que hacer para no olvidar ningún paso.
+**Cuándo usarlo:** Cuando empieza el período de cierre del mes y necesitas un listado ordenado de todo lo que tienes que hacer para no olvidar ningún paso.
 
 ```
 Actúa como un Contador Público mexicano experto en procesos de cierre contable y fiscal.

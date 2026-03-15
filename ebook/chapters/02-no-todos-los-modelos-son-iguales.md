@@ -1,4 +1,4 @@
-# Capitulo 2: No todos los modelos son iguales
+# Capítulo 2: No todos los modelos son iguales
 
 <!--
 Fuente: Newsletter #2
