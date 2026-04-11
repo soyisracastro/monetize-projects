@@ -1,0 +1,12 @@
+# Placeholder
+
+Este directorio recibe archivos finales de assets:
+
+- Audio grabado del lead magnet (.mp3 / .m4a)
+- PDF exportado del lead magnet "Sin Sorpresas"
+- Imágenes de la squeeze page y página Nas.io
+- Logo de S&I Castro Consultores (si aplica)
+- Foto de Israel para uso en marketing
+- Video de Meta Ads (cuando se grabe)
+
+Los archivos binarios pesados deberían añadirse al `.gitignore` del workspace si crecen demasiado.
