@@ -105,7 +105,7 @@ En la práctica, eso significa que la declaración prellenada **casi siempre tie
 - Pagos que **se hicieron en efectivo** pero las deducciones personales que requieren forma de pago bancarizada no las acepta el SAT — y la prellenada tampoco te avisa que el método de pago invalida la deducción
 - Conceptos que **no se reportan automáticamente**, como aportaciones complementarias de retiro a tu plan personal o intereses reales hipotecarios — esos los tienes que meter tú a mano
 - **Inconsistencias** entre lo que tu patrón reportó y lo que realmente te pagó (sucede más de lo que crees)
-- CFDI de un tercero (tu cónyuge, un hijo, tus padres) que **sí son deducibles para ti** pero el SAT no tiene cómo saber que existes en su vida fiscal
+- CFDI de un tercero (tu cónyuge, un hijo, tus padres) que **sí son deducibles para ti** pero el SAT no tiene cómo saber que existen en su vida fiscal
 
 Si abres la prellenada, le das clic y la presentas, **te quedas con la versión que el SAT armó por su cuenta** — que casi siempre es la cuenta más cara para tu bolsillo, porque está incompleta.
 
@@ -135,7 +135,7 @@ Laura tiene 33 años. Trabaja en una empresa de marketing desde hace 5 años, ga
 
 Laura tampoco tiene hipoteca, tampoco tiene hijos.
 
-La diferencia entre Laura y Juan es esta: cuando Laura va al dentista, pide su factura. Cuando va al doctor, también. Cuando paga su seguro de gastos médicos mayores anual, lo hace con tarjeta y guarda el comprobante. Cuando hace su donativo de fin de año a una asociación civil que apoya, pide su CFDI.
+La diferencia entre Laura y Juan es esta: cuando Laura va al dentista, pide su factura. Cuando va al doctor, también. Cuando paga su seguro de gastos médicos mayores de manual anual, lo hace con tarjeta y guarda el comprobante. Cuando hace su donativo de fin de año a una asociación civil que apoya, pide su CFDI.
 
 Laura no es contadora. No sabe nada de impuestos. Lo único que hace es **pedir factura** y **guardar todo en una carpeta de Drive**.
 
@@ -157,7 +157,7 @@ Aquí están las cuentas, lado a lado:
 | **ISR anual causado** (Art. 152 LISR) | **$56,880** | **$46,627** |
 | **Resultado de la declaración** | **$0** (cero) | **$10,253 a favor** |
 
-> Cifras calculadas con la tarifa anual del Art. 152 LISR vigente para el ejercicio 2025 (rango 6: $185,852.58 a $374,837.88, cuota fija $19,682.13, 21.36% sobre el excedente). La retención mensual del patrón se calcula con la tarifa del Art. 96 LISR: con un sueldo bruto de $30,000 al mes, el patrón retiene $4,740 mensuales, que multiplicado por 12 da exactamente $56,880 al año.
+> Cifras calculadas con la tarifa anual del Art. 152 LISR vigente para el ejercicio 2025. La retención mensual del patrón se calcula con la tarifa del Art. 96 LISR: con un sueldo bruto de $30,000 al mes, el patrón retiene $4,740 mensuales, que multiplicado por 12 da exactamente $56,880 al año.
 
 ### El mensaje de esta historia
 
@@ -173,7 +173,7 @@ Laura no hizo nada extraordinario. No buscó un esquema fiscal complicado. No co
 
 Eso le dejó $10,253 más en el bolsillo que a Juan.
 
-> **Una nota técnica importante para que entiendas tu propio caso**: cada peso que metes como deducción personal no te lo devuelven al 100%. Te lo devuelven a tu tasa marginal de ISR. Para alguien con un sueldo de $30,000 al mes esa tasa es del 21.36%. Por eso los $48,000 de Laura se convirtieron en $10,253 de devolución (21.36% × $48,000). Si ganas más, tu tasa marginal sube y cada peso deducido te rinde más. Si ganas menos, tu tasa marginal baja y rinde menos. Por eso tiene sentido revisar caso por caso.
+> **Una nota importante para que entiendas tu propio caso**: cada peso que metes como deducción personal no te lo devuelven al 100%. Te lo devuelven a tu tasa marginal de ISR. Para alguien con un sueldo de $30,000 al mes esa tasa es del 21.36%. Por eso los $48,000 de Laura se convirtieron en $10,253 de devolución (21.36% × $48,000). Si ganas más, tu tasa marginal sube y cada peso deducido te rinde más. Si ganas menos, tu tasa marginal baja y rinde menos. Por eso tiene sentido revisar caso por caso.
 
 Si quieres que el siguiente año tu declaración se parezca más a la de Laura que a la de Juan, sigue leyendo.
 
@@ -352,9 +352,11 @@ Si tus depósitos bancarios del año son significativamente mayores a tus ingres
 
 ### Pérdida del derecho a tu saldo a favor
 
-Esta es la que duele en el bolsillo: si tenías derecho a un saldo a favor y no presentaste declaración a tiempo, **pierdes el derecho a recuperarlo**. La declaración anual es el único vehículo para que el SAT te devuelva. Si no presentas, el dinero se queda con el SAT.
+Esta es la que duele en el bolsillo: si tenías derecho a un saldo a favor y no presentaste declaración a tiempo, **pierdes el derecho a recuperarlo de forma automática**. La declaración anual es el único vehículo para que el SAT te devuelva sin tener que presentar otro trámite adicional. Si no presentas, el dinero se queda con el SAT en tanto no presentes el trámite de devolución manual de saldos a favor.
 
-### Imposibilidad de obtener tu Constancia de Situación Fiscal actualizada
+Si, otro trámite, lo que representa mas carga administrativa para ti.
+
+### Imposibilidad de obtener tu Constancia limpia
 
 Cada vez más trámites de la vida cotidiana piden tu Constancia de Situación Fiscal: créditos bancarios, contratos, alta en empleos, trámites de visa. Si tienes obligaciones omitidas, el SAT puede negarse a expedirte una constancia "limpia".
 
@@ -393,8 +395,8 @@ Si después de leer todo esto sientes que prefieres que alguien con experiencia 
 
 **Lo que recibes:**
 
-1. **Presentación completa de tu declaración anual ante el SAT** — yo me encargo del trámite de principio a fin. Incluye tus ingresos por salario Y tus intereses de apps de ahorro (Nu, Cetes Directo, Hey Banco, Mercado Pago, GBM, Sofipos) — sin cargo extra
-2. **Dictamen fiscal personalizado de 1 página** — un resumen claro de tu resultado, por qué salió así, y qué inconsistencias detecté en tu expediente del SAT
+1. **Presentación completa de tu declaración anual ante el SAT** — yo me encargo del trámite de principio a fin. Incluye tus ingresos por salario e intereses de apps de ahorro (Nu, Cetes Directo, Hey Banco, Mercado Pago, GBM, Sofipos) — sin cargo extra
+2. **Dictamen fiscal personalizado (1 página)** — un resumen claro de tu resultado, por qué salió así, y qué inconsistencias detecté en tu expediente del SAT
 3. **Guía de deducciones personales 2026 personalizada** — para que el siguiente año llegues mejor preparado, con tu lista específica de qué guardar según tu perfil
 4. **Revisión de tu buzón tributario** — la mayoría de la gente nunca lo abre y tiene notificaciones acumuladas
 
@@ -406,14 +408,14 @@ Si después de leer todo esto sientes que prefieres que alguien con experiencia 
 
 **Lo único que tú haces:**
 - Pagar
-- Mandarme tu e-firma por correo (te explico cómo, sin tecnicismos)
-- Esperar a recibir tu acuse + dictamen + guía
+- Mandarme tu e-firma por correo (te explico cómo, 100% seguro)
+- Esperar a recibir tu acuse + dictamen + guía (3-4 hábiles)
 
 **Add-on opcional:** sesión 1:1 de 20 minutos por $400 adicionales para que te explique tu resultado en vivo. No es necesaria — el dictamen está hecho para que se entienda solo. Pero algunos clientes prefieren platicarlo.
 
 **Cupo limitado:** atiendo entre 5 y 8 declaraciones por día. **Esta temporada acepto 40 clientes en total**, no más, porque quiero darle a cada uno la atención que merece. Cuando se llenen los cupos, los siguientes pasan a la lista de espera del próximo año.
 
-**Deadline real:** 30 de abril 2026 — fecha límite del SAT.
+**Fecha límite:** 30 de abril 2026 — fecha límite del SAT.
 
 **Por qué confiar en mí:**
 He recuperado más de **$20 millones de pesos en saldos a favor** para mis clientes a lo largo de mi carrera. Soy CP con más de 15 años de experiencia, llevo más de 10 presentando declaraciones anuales, y tengo un perfil único que combina contabilidad con ingeniería de software. Eso me permite ser más preciso y más rápido que la mayoría.
@@ -502,7 +504,6 @@ Cuídate mucho. Nos vemos del otro lado de tu declaración.
 
 CP Israel Castro Urieta
 S I Castro Consultores · TodoConta
-[columna13.club](https://columna13.club)
 
 ---
 
