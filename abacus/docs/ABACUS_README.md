@@ -1,9 +1,13 @@
 # 🧮 ABACUS - Asistente Fiscal Inteligente
 
-**Versión:** 1.1 MVP — Pivot a contador como usuario primario
-**Última actualización:** 15 de Marzo de 2026
+**Versión:** 2.0 — En producción
+**Última actualización:** 12 de Abril de 2026
 **Autor:** Isca Castro (TodoConta / S&I Castro Consultores)
-**Stack:** OpenClaw + Claude Sonnet 4.6 + WhatsApp Business
+**Stack:** OpenClaw 2026.3.23 + Claude Sonnet 4.6 + WhatsApp + Telegram
+**Estado:** ✅ EN PRODUCCIÓN — atendiendo usuarios reales
+**VPS:** Hostinger Ubuntu 24.04 (187.77.152.160)
+
+> **Estado detallado del proyecto en producción:** ver [CURRENT_STATUS.md](./CURRENT_STATUS.md)
 
 ---
 
@@ -109,31 +113,36 @@ ver más profesional, más rápido y más seguro ante su cliente.
 
 ## 🗺️ ROADMAP EJECUTIVO
 
-### **HOY (11 Marzo 2026) - Día 0**
+### **Día 0 — Marzo 2026** ✅ COMPLETADO
 ```
-☐ Contratar Hostinger VPS KVM 1
-☐ Instalar OpenClaw manualmente
-☐ Configurar Claude OAuth + ChatGPT OAuth
-☐ Conectar WhatsApp Business
-☐ Crear base de conocimiento mínima
-☐ Testing con 3-5 beta users
+✅ Hostinger VPS KVM 1 contratado (Ubuntu 24.04 LTS)
+✅ OpenClaw v2026.3.23 instalado y corriendo como servicio systemd
+✅ Claude Sonnet 4.6 configurado (Anthropic API key)
+✅ WhatsApp conectado (2 cuentas: default + personal)
+✅ Telegram conectado
+✅ Base de conocimiento fiscal MVP (RESICO, CFF, LISR, CFDI, IMSS)
+✅ Beta testing completado
 ```
 
-### **Semana 1-4 (Mes 1)**
+### **Mes 1 — Marzo/Abril 2026** ✅ EN CURSO
 ```
-☐ Recopilar feedback de beta testing
-☐ Optimizar respuestas fiscales
-☐ Agregar 10+ temas a base de conocimiento
-☐ Lanzamiento público limitado (50 usuarios)
-☐ Implementar sistema de cuotas freemium
+✅ Skills operativos: verificador-rfc, tipo-de-cambio, cfdi-tools, gatekeeper, fiscal-mx
+✅ Plugins nativos registrados: gatekeeper (schema estricto), verificador-rfc (2 tools)
+✅ Allowlist gestionado via gatekeeper (~10 números)
+✅ Memoria vectorial LanceDB con auto-recall
+✅ Prompts hardened (XML tags, few-shot, seguridad expandida)
+✅ MCP servers configurados (stripe, supabase, context7 via mcporter)
+☐ Definir pricing final (actualmente "en definición")
+☐ Implementar sistema de cuotas
+☐ Lanzamiento público limitado
 ```
 
 ### **Mes 2-3**
 ```
-☐ Adquirir 10-30 suscriptores Premium
-☐ Implementar método de pago (SPEI manual)
-☐ Expandir base de conocimiento a 30+ temas
-☐ Optimizar conversiones gratuito → Premium
+☐ Adquirir primeros suscriptores pagos
+☐ Implementar método de pago (Stripe MCP ya conectado)
+☐ Expandir knowledge base (LIVA, CFF completo, RMF 2026)
+☐ Migrar MCPs a OpenClaw nativo (stripe, supabase, context7)
 ```
 
 ### **Mes 4-6 (Fase 2)**
@@ -167,30 +176,30 @@ ver más profesional, más rápido y más seguro ante su cliente.
 
 ## 💰 PROYECCIONES FINANCIERAS
 
-### Costos Mensuales (MVP)
+### Costos Mensuales (Actualizado abril 2026)
 ```
 Hostinger VPS KVM 1:        ~110 MXN ($6 USD)
-Claude OAuth (Pro):      1,800 MXN ($100 USD)
-ChatGPT Plus OAuth:        360 MXN ($20 USD)
+Anthropic API (Claude):  Variable (ya no es OAuth — Anthropic cambió política)
+Gemini Flash (fallback):    Variable (por uso)
 Whisper API:                18 MXN ($1 USD)
 WhatsApp Business:           0 MXN (gratis)
 ──────────────────────────────────────────
-TOTAL:                  ~2,288 MXN ($127 USD/mes)
+TOTAL FIJO:             ~130 MXN + costo API por uso
 ```
 
-### Pricing
+**Nota:** Anthropic dejó de permitir compartir suscripción personal con bots.
+Se migró a API directa. El costo variable depende del volumen de mensajes.
+
+### Pricing (Definido abril 2026)
 ```
-Prueba:        14 días gratis, acceso completo (sin tarjeta)
-Profesional:   $199 MXN/mes - Ilimitado + voz + RFC + CFDI
-Bundle:        $299 MXN/mes - Profesional + TodoConta ecosystem
-Despacho:      $499 MXN/mes - Hasta 5 usuarios (Año 1 Q3+)
+Mensualidad:   $499 MXN/mes - Acceso completo (consultas, voz, RFC, CFDI)
+Sin plan anual.
 ```
 
-### Break-even
+### Tracción actual (abril 2026)
 ```
-Mes 3: ~17 suscriptores Profesional
-MRR Mes 12: ~$46,000 MXN
-ROI Año 1: proyectado positivo desde Mes 3
+Suscriptores activos: 5
+MRR actual: ~$2,495 MXN
 ```
 
 ---

@@ -1,36 +1,23 @@
 # 📚 ÍNDICE MAESTRO - PROYECTO ABACUS
 
-**Última actualización:** 11 de Marzo de 2026  
-**Versión:** 1.0 Complete Documentation Set  
-**Total de documentos:** 30 planificados
+**Última actualización:** 12 de Abril de 2026
+**Versión:** 2.0 — Proyecto en producción
+**Total de documentos:** 30 planificados + 1 nuevo (CURRENT_STATUS.md)
+**Estado del proyecto:** ✅ EN PRODUCCIÓN
 
 ---
 
 ## 🎯 CÓMO USAR ESTA DOCUMENTACIÓN
 
-### Para Lanzamiento HOY (Día 0)
+### Para entender el estado actual
 
 ```
-Documentos críticos a leer EN ORDEN:
-
-1. ABACUS_README.md
-   → Visión general del proyecto
-
-2. 01_MVP_Setup_Guide.md
-   → Guía paso a paso para hoy
-
-3. 02_MVP_Configuration.md
-   → Configuraciones técnicas
-
-4. 03_MVP_Content.md
-   → Base de conocimiento
-
-5. 04_MVP_Testing.md
-   → Plan de testing
+1. CURRENT_STATUS.md          → Estado real del VPS en produccion
+2. ABACUS_README.md           → Vision general + roadmap actualizado
+3. 16_Business_Model.md       → Modelo de negocio (pricing pendiente de finalizar)
 ```
 
-**Tiempo estimado lectura:** 2-3 horas  
-**Tiempo implementación:** 6-8 horas
+**Nota:** El lanzamiento (Día 0) ya ocurrió. El setup guide (01_MVP_Setup_Guide.md) es referencia histórica.
 
 ---
 

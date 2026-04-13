@@ -2,7 +2,7 @@
 ## Bot Fiscal Inteligente Monetizable para México
 
 **Proyecto:** Asistente Fiscal Automatizado  
-**Cliente/Owner:** Isca Castro - S&I Castro Consultores / TodoConta  
+**Cliente/Owner:** Isca Castro - TodoConta  
 **Fecha:** Febrero 2026  
 **Status:** Pre-Lanzamiento  
 **Documento:** Especificaciones Técnicas y Plan de Negocio
