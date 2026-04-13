@@ -45,7 +45,9 @@ estado: Borrador v1 — pendiente validación de cifras por el CP antes de expor
 
 ### Una guía práctica para personas físicas asalariadas
 
+<!--
 **Ejercicio fiscal 2025 — para presentar en abril 2026**
+-->
 
 Por **CP Israel Castro Urieta**
 S I Castro Consultores · TodoConta
@@ -70,7 +72,9 @@ Empezamos.
 
 ---
 
-## Sección 1 — Lo que el SAT ya sabe de ti
+<!-- Sección 1 -->
+
+## Lo que el SAT ya sabe de ti
 
 Empiezo por la parte que más sorprende a la gente: **el SAT ya tiene casi toda tu información fiscal del año pasado**. No es que esté esperando a que tú llegues a contarle. Lleva meses recibiendo datos sobre ti.
 
@@ -109,7 +113,9 @@ La declaración prellenada es un punto de partida, no un punto de llegada. **Hay
 
 ---
 
-## Sección 2 — Por qué Juan se queda en cero y a Laura le devuelven $10,000
+<!-- Sección 2 -->
+
+## Por qué Juan se queda en cero y a Laura le devuelven $10,000
 
 Voy a contarte la historia de dos personas que tienen exactamente la misma situación financiera, y cómo terminan con resultados completamente distintos en su declaración anual.
 
@@ -173,7 +179,9 @@ Si quieres que el siguiente año tu declaración se parezca más a la de Laura q
 
 ---
 
-## Sección 3 — Las deducciones personales que casi nadie usa
+<!-- Sección 3 -->
+
+## Las deducciones personales que casi nadie usa
 
 Esta es la lista completa de gastos que el SAT te permite restar de tus ingresos antes de calcular cuánto impuesto debes. Se llaman **deducciones personales** y están en el Artículo 151 de la Ley del ISR.
 
@@ -268,7 +276,9 @@ Esto importa porque la mayoría de la gente cree que el tope la limita a una can
 
 ---
 
-## Sección 4 — Los 5 errores más comunes al declarar (y cómo evitarlos)
+<!-- Sección 4 -->
+
+## Los 5 errores más comunes al declarar (y cómo evitarlos)
 
 ### Error 1: No pedir factura porque "para qué, si yo no facturo nada"
 
@@ -308,7 +318,7 @@ La comparación no sirve. Lo único que sirve es entender **tu propio caso**.
 
 ### Error 4: Aceptar la declaración prellenada del SAT sin revisarla
 
-Como te conté en la Sección 1, la declaración prellenada del SAT es un punto de partida, no un punto de llegada. El sistema ya te trae cargada buena parte de la información — incluidas algunas deducciones personales — pero **el SAT no se va a preocupar por ti**: no va a verificar que el "uso del CFDI" sea el correcto, ni que el método de pago sea válido, ni que estén todos los CFDI que tú emitiste con tu RFC.
+Como te conté en la Sección "Lo que el SAT ya sabe de ti", la declaración prellenada del SAT es un punto de partida, no un punto de llegada. El sistema ya te trae cargada buena parte de la información — incluidas algunas deducciones personales — pero **el SAT no se va a preocupar por ti**: no va a verificar que el "uso del CFDI" sea el correcto, ni que el método de pago sea válido, ni que estén todos los CFDI que tú emitiste con tu RFC.
 
 Si la presentas tal cual aparece, te quedas con la versión que el SAT armó por su cuenta — casi siempre incompleta y casi siempre la más cara para tu bolsillo.
 
@@ -322,7 +332,9 @@ Si lo único que necesitas es que alguien aprete el botón, está bien. Pero si 
 
 ---
 
-## Sección 5 — Qué pasa si estás obligado a presentar y no lo haces
+<!-- Sección 5 -->
+
+## Qué pasa si estás obligado a presentar y no lo haces
 
 No te voy a meter miedo. Pero sí necesitas saber qué puede pasar para que tomes una decisión informada.
 
@@ -352,7 +364,9 @@ El mensaje es: **si estás obligado, presenta**. No tiene sentido jugarse multas
 
 ---
 
-## Sección 6 — El siguiente paso es tuyo
+<!-- Sección 6 -->
+
+## El siguiente paso es tuyo
 
 Si llegaste hasta aquí, ya sabes más sobre tu declaración anual que la mayoría de los asalariados de México. En serio.
 
@@ -406,7 +420,7 @@ He recuperado más de **$20 millones de pesos en saldos a favor** para mis clien
 
 Si quieres apartar tu lugar, aquí está el link:
 
-**[LINK_NASIO]**
+**https://todoconta.com/resuelta**
 
 ---
 
