@@ -1,0 +1,16 @@
+{
+  "name": "abacus-todoconta",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Poderes SAT para Abacus vía la API pública de TodoConta",
+  "main": "index.mjs",
+  "openclaw": {
+    "extensions": [
+      "./index.mjs"
+    ]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "abacus-todoconta",
+  "name": "Abacus TodoConta",
+  "description": "Poderes SAT para Abacus via la API publica de TodoConta: CSF, Opinion 32-D, CFDIs (solicitud/estado/procesado/Excel), listas negras y calculadoras de las empresas del suscriptor.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "gatewayUrl": {
+        "type": "string",
+        "description": "Base de la API publica de TodoConta.",
+        "default": "https://api.todoconta.com"
+      },
+      "internoToken": {
+        "type": "string",
+        "description": "Token del endpoint interno /internal/vinculos del gateway. Si se omite, usa env TODOCONTA_INTERNO_TOKEN."
+      },
+      "vinculosKey": {
+        "type": "string",
+        "description": "Llave AES-256-GCM (32 bytes base64) que descifra las API keys de asistente_vinculos. Si se omite, usa env ASISTENTE_VINCULOS_KEY."
+      },
+      "mediaDir": {
+        "type": "string",
+        "description": "Directorio donde se guardan PDFs/Excel para enviarlos por WhatsApp.",
+        "default": "/root/.openclaw/media/outbound"
+      }
+    }
+  }
+}
