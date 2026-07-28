@@ -1,0 +1,21 @@
+PLANTILLA BASE DE PROMPT
+(la estructura que se repite en los 4 flujos: rol, contexto, tarea, reglas, formato, datos)
+
+ROL
+Actua como [el rol que necesitas: mi auxiliar de conciliacion, gerente fiscal
+de mi despacho, fiscalista senior...].
+
+CONTEXTO (primero el expediente, no la orden)
+- Cliente / regimen / periodo:
+- Reglas de mi despacho:
+- Ejemplos ya resueltos por mi (si aplica, 3 o 4):
+
+TAREA
+[Que quiero exactamente.] Trabaja SOLO con los datos que te doy. No inventes
+conceptos, montos ni citas. Si algo no esta, dilo.
+
+FORMATO DE SALIDA
+[Como lo quiero: tabla con estas columnas / tres secciones / dos entregas...]
+
+DATOS
+[pega aqui tus datos]

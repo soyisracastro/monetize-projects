@@ -1,0 +1,14 @@
+LAS 3 REGLAS DEL FLUJO HIBRIDO
+(pegalas arriba de tu escritorio; son las que hacen que todo lo demas funcione)
+
+1. DALE CONTEXTO, NO ORDENES.
+   Primero el expediente (regimen, actividad, reglas de tu despacho, ejemplos
+   ya resueltos por ti), luego la tarea. El contexto manda sobre el "prompt magico".
+
+2. PROHIBELE INVENTAR.
+   Escribe siempre: "trabaja SOLO con los datos que te doy; si algo no esta, dilo;
+   no inventes conceptos, montos ni citas".
+
+3. TU FIRMAS.
+   La IA te da el 90%. El 10% que lo vuelve defendible, la verificacion y tu firma
+   son tuyos. Ante el SAT respondes tu, no el modelo.

@@ -1,0 +1,15 @@
+Folio,Fecha,Proveedor,RFC,Subtotal,IVA_16,IVA_Retenido,ISR_Retenido,Concepto,Uso_CFDI
+G-101,2026-06-02,Papeleria y Equipos del Valle SA de CV,PEV150402TL8,4200.00,672.00,0.00,0.00,Papeleria de oficina,G03
+G-102,2026-06-19,Papeleria y Equipos del Valle SA de CV,PEV150402TL8,1800.00,288.00,0.00,0.00,Toner y consumibles,G03
+G-103,2026-06-04,Combustibles La Rapida SA de CV,CRA120708M9A,6034.48,965.52,0.00,0.00,Gasolina,G03
+G-104,2026-06-21,Combustibles La Rapida SA de CV,CRA120708M9A,5172.41,827.59,0.00,0.00,Gasolina,G03
+G-105,2026-06-01,Arrendadora Inmobiliaria Centro SA de CV,AIC031122SF7,25000.00,4000.00,0.00,0.00,Renta de oficina,G03
+G-106,2026-06-15,Ramirez Lopez Mario,RALM850617H23,15000.00,2400.00,1600.00,1500.00,Honorarios legales,G03
+G-107,2026-06-10,Autotransportes de Carga del Bajio SA de CV,ACB090914JT2,12000.00,1920.00,480.00,0.00,Flete de mercancia,G03
+G-108,2026-06-08,Distribuidora de Alimentos Basicos SA de CV,DAB100519PN3,9800.00,0.00,0.00,0.00,Productos alimenticios tasa 0,G03
+G-109,2026-06-12,Servicios Medicos Integrales SC,SMI140228QG5,3500.00,0.00,0.00,0.00,Consulta medica,G03
+G-110,2026-06-17,Global Tech Solutions LLC,XEXX010101000,8500.00,0.00,0.00,0.00,Licencia de software extranjero,G03
+G-111,2026-06-23,Ferreteria Industrial del Norte SA de CV,FIN051130RB6,5600.00,896.00,0.00,0.00,Herramienta menor,G03
+G-112,2026-06-25,Camara Nacional de Comercio,CNC8501015J2,2000.00,0.00,0.00,0.00,Cuota anual,G03
+G-113,2026-06-27,Publicidad Digital MX SA de CV,PDM170803LK4,7000.00,1120.00,0.00,0.00,Campana de anuncios,G03
+G-114,2026-06-28,Limpieza y Mantenimiento Total SA de CV,LMT130625UV8,4300.00,688.00,0.00,0.00,Servicio de limpieza,G03
