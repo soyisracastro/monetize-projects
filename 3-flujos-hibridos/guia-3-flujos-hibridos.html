@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- Versión reproducible por código de la guía. NOTA: por ahora el PDF servido
+     es el export de Claude Design (guia-3-flujos-hibridos.pdf, misma carpeta y en
+     la landing). Este HTML es la alternativa reproducible; si vuelves a ella,
+     regenera con Chrome headless (--headless --print-to-pdf). -->
+<title>Inteligencia Artificial para Contadores — 3 Flujos Híbridos · TodoConta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A1628;
+    --bone: #FAFAF7;
+    --ink: #1B2432;
+    --soft: #46526B;
+    --quiet: #737F95;
+    --primary: #0B5FFF;
+    --primary-ink: #0848CC;
+    --cian: #06B6D4;
+    --rule: #DDE2EA;
+    --rule-dark: #0A1628;
+    --blue-bg: #EAF2FF;
+    --pink-bg: #FCECEC;
+    --red: #D64550;
+    --cream: #F5F2EA;
+  }
+  * { box-sizing: border-box; }
+
+  @page { size: Letter; margin: 15mm; }
+  @page cover { margin: 0; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    font-size: 11.3pt;
+    line-height: 1.62;
+    letter-spacing: -0.003em;
+  }
+  p { margin: 0 0 12px; }
+  b, strong { font-weight: 700; color: var(--ink); }
+
+  /* ---------------- Cover ---------------- */
+  .cover {
+    page: cover;
+    position: relative;
+    background:
+      radial-gradient(1100px 640px at 82% 120%, #10224A 0%, rgba(16,34,74,0) 55%),
+      radial-gradient(900px 520px at 12% -12%, #16265A 0%, var(--navy) 58%);
+    color: #E9EFFB;
+    min-height: 100vh;
+    padding: 24mm 22mm 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+  }
+  .cover__brand { display: flex; align-items: center; gap: 10px; }
+  .cover__brand svg { width: 26px; height: 26px; display: block; }
+  .cover__brand span { font-weight: 800; font-size: 15pt; letter-spacing: -0.015em; color: #fff; }
+  .cover__brand .wm-dot { color: var(--cian); }
+
+  .cover__mid { padding-bottom: 4mm; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: "JetBrains Mono", monospace; font-size: 8.5pt; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: #A9C6F2;
+    border: 1px solid rgba(160,190,240,0.35); border-radius: 999px;
+    padding: 6px 13px; margin-bottom: 20px;
+  }
+  .badge .d { width: 6px; height: 6px; border-radius: 50%; background: var(--cian); }
+  .cover__title { font-size: 40pt; line-height: 1.0; font-weight: 900; letter-spacing: -0.035em; color: #fff; margin: 0; }
+  .cover__uline { width: 64px; height: 4px; background: var(--cian); border-radius: 2px; margin: 20px 0 18px; }
+  .cover__sub { font-size: 16pt; font-weight: 700; letter-spacing: -0.02em; color: #EAF0FB; margin: 0 0 14px; }
+  .cover__desc { font-size: 11.5pt; line-height: 1.55; color: #AFC0DE; max-width: 30em; margin: 0; }
+
+  .cover__foot { display: flex; align-items: flex-end; justify-content: space-between; padding-bottom: 16mm; }
+  .cover__author { font-size: 10pt; line-height: 1.5; color: #92A3C2; }
+  .cover__author b { color: #EAF0FB; font-weight: 700; display: block; margin-bottom: 2px; font-size: 11pt; }
+  .cover__url { font-family: "JetBrains Mono", monospace; font-size: 9.5pt; letter-spacing: 0.04em; color: #6E82A6; }
+  .cover__stripe { position: absolute; left: 0; right: 0; bottom: 0; height: 7px; background: var(--cian); }
+
+  /* ---------------- Sections ---------------- */
+  .srule { height: 0; border-top: 1.5px solid var(--rule-dark); margin: 0 0 20px; }
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace; font-size: 8.5pt; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--primary);
+    margin-bottom: 7px;
+  }
+  h2 { font-size: 21pt; font-weight: 800; letter-spacing: -0.028em; color: var(--navy); line-height: 1.08; margin: 0 0 14px; }
+  .flow { page-break-before: always; }
+  .flow > h2 { margin-bottom: 18px; }
+
+  .label {
+    font-family: "JetBrains Mono", monospace; font-size: 8.5pt; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary);
+    display: block; margin: 16px 0 4px;
+  }
+  .label--keep { color: var(--cian); }
+  .lead { color: var(--soft); }
+
+  ol.how { margin: 6px 0 0; padding-left: 22px; }
+  ol.how li { margin-bottom: 8px; padding-left: 4px; }
+
+  /* ---------------- Callouts ---------------- */
+  .callout {
+    break-inside: avoid; border-radius: 0 10px 10px 0;
+    padding: 15px 20px; margin: 16px 0;
+    background: var(--blue-bg); border-left: 3px solid var(--primary);
+  }
+  .callout--warn { background: var(--pink-bg); border-left-color: var(--red); }
+  .callout__label {
+    font-family: "JetBrains Mono", monospace; font-size: 8pt; font-weight: 700;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--primary-ink);
+    display: block; margin-bottom: 6px;
+  }
+  .callout--warn .callout__label { color: var(--red); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* ---------------- Prompt ---------------- */
+  .prompt { break-inside: avoid; margin: 14px 0 0; border-radius: 10px; overflow: hidden; border: 1px solid #E6E2D8; }
+  .prompt__bar {
+    background: var(--navy); color: #EAF0FB; padding: 9px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: "JetBrains Mono", monospace; font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .prompt__bar .hint { color: #8FA3C4; text-transform: none; letter-spacing: 0.02em; font-weight: 400; }
+  .prompt__body { background: var(--cream); padding: 15px 18px; }
+  .prompt__body pre {
+    margin: 0; color: #232B38;
+    font-family: "JetBrains Mono", monospace; font-size: 8.6pt; line-height: 1.55;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .prompt__note { font-size: 9.5pt; color: var(--quiet); font-style: italic; margin: 9px 2px 0; }
+
+  /* ---------------- Savings row ---------------- */
+  .savings {
+    break-inside: avoid; display: flex; gap: 20px; align-items: baseline;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    padding: 13px 2px; margin: 20px 0 0;
+  }
+  .savings__k {
+    flex: 0 0 118px; font-family: "JetBrains Mono", monospace; font-size: 8pt; font-weight: 700;
+    letter-spacing: 0.11em; text-transform: uppercase; color: var(--cian); padding-top: 2px;
+  }
+  .savings__v { font-size: 11.5pt; color: var(--ink); }
+
+  /* ---------------- Close ---------------- */
+  .close { margin-top: 30px; }
+  .pullquote {
+    break-inside: avoid; border-left: 3px solid var(--cian);
+    padding: 4px 0 4px 20px; margin: 18px 0;
+    font-size: 15pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; color: var(--navy);
+  }
+  .next { break-inside: avoid; border: 1px solid var(--rule); border-radius: 12px; padding: 18px 22px; margin-top: 22px; }
+  .next h3 { margin: 0 0 10px; font-size: 13pt; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; }
+  .next ul { margin: 0; padding-left: 18px; }
+  .next li { margin-bottom: 7px; }
+  .link { color: var(--primary); font-weight: 600; }
+  .sign { margin: 16px 0 0; padding-top: 13px; border-top: 1px solid var(--rule); font-size: 9.5pt; color: var(--quiet); }
+  .sign b { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="cover__brand">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M14 14H32V50H22C17.5817 50 14 46.4183 14 42V14Z" fill="#F5F1E8"></path><path d="M32 14H42C46.4183 14 50 17.5817 50 22V50H32V14Z" stroke="#F5F1E8" stroke-width="5" stroke-linejoin="round" fill="none"></path><rect x="29" y="28" width="6" height="8" fill="#06B6D4"></rect></svg>
+    <span>TodoConta<span class="wm-dot">.</span></span>
+  </div>
+
+  <div class="cover__mid">
+    <span class="badge"><span class="d"></span> Guía práctica · IA para Contadores · 2026</span>
+    <h1 class="cover__title">Inteligencia Artificial<br>para Contadores</h1>
+    <div class="cover__uline"></div>
+    <p class="cover__sub">3 flujos híbridos que te ahorrarán horas</p>
+    <p class="cover__desc">Actualizada a 2026 con los modelos de frontera actuales (Claude Opus 5, Sonnet 5 y Fable 5). La IA se lleva el volumen; tú te quedas con el criterio.</p>
+  </div>
+
+  <div class="cover__foot">
+    <div class="cover__author"><b>Israel Castro</b>Contador Público y desarrollador.<br>Creador de TodoConta.</div>
+    <div class="cover__url">todoconta.com</div>
+  </div>
+  <div class="cover__stripe"></div>
+</div>
+
+<!-- ===================== INTRO ===================== -->
+<section class="intro">
+  <div class="srule"></div>
+  <div class="eyebrow">Antes de empezar</div>
+  <h2>El principio híbrido</h2>
+
+  <p>La pregunta ya no es «¿la IA puede hacer mi trabajo?». La respuesta corta es: sí, buena parte del operativo. Los modelos de frontera de hoy (Claude Opus 5, Sonnet 5, o su equivalente en ChatGPT y Gemini) ya no solo redactan un correo. Ejecutan flujos completos: leen, clasifican, cruzan, calculan y te entregan un borrador.</p>
+  <p>La pregunta correcta es otra: <b>«¿qué parte del flujo hace la máquina y qué parte me quedo yo?»</b>.</p>
+  <p>Eso es un flujo híbrido. La IA se lleva el volumen (la captura, el cruce, la primera pasada). Tú te quedas con lo que la máquina no puede firmar: el criterio, la verificación y la responsabilidad. Ante el SAT, quien responde eres tú, no el modelo.</p>
+
+  <div class="callout">
+    <span class="callout__label">El cambio técnico que casi nadie aprovecha</span>
+    <p>Los modelos frontera de 2026 leen alrededor de <b>un millón de tokens</b> en una sola conversación. En cristiano: en una sola sesión le cabe la Ley del ISR completa, la miscelánea vigente y el expediente entero de tu cliente. Todo junto.</p>
+  </div>
+
+  <p>Por eso el secreto ya no es «el prompt mágico». Es darle el contexto correcto. A esto se le llama <i>context engineering</i>, y es la diferencia entre una respuesta que puedes defender y una que solo se ve bonita.</p>
+  <p class="lead">Los tres flujos de abajo están pensados así: mucho contexto, la IA hace el trabajo pesado, tú pones el criterio. Cada uno te dice qué hace la máquina, qué te quedas tú, cómo montarlo y cuánto tiempo recuperas.</p>
+</section>
+
+<!-- ===================== FLUJO 1 ===================== -->
+<section class="flow">
+  <div class="srule"></div>
+  <div class="eyebrow">Flujo 01</div>
+  <h2>Clasificar tus CFDIs (deducible o no) sin capturar a mano</h2>
+
+  <span class="label">El dolor</span>
+  <p>Son las 9 de la noche, tu familia ya cenó, y sigues frente a la pantalla decidiendo factura por factura si esa comida, esa gasolina o esa herramienta es deducible según la actividad del cliente. Cientos de XML, uno por uno.</p>
+
+  <span class="label">Qué hace la IA</span>
+  <p>Le pasas el lote de CFDIs (o el reporte en Excel que ya tienes) y el contexto del cliente: su régimen, su actividad económica y tus criterios de deducibilidad. El modelo lee cada comprobante, lo clasifica como deducible, no deducible o «revisar», y te explica por qué en cada caso dudoso. Un lote que te tomaba dos horas queda en minutos.</p>
+
+  <span class="label label--keep">Qué te quedas tú</span>
+  <p>La lista de «revisar». La IA es buenísima para el 90% obvio, pero la deducibilidad de una comida de negocios o de un activo a medio camino es criterio profesional, y ahí decides tú. Nunca aceptes la clasificación completa a ciegas: revisa los casos que el modelo marcó como dudosos, que son justo donde estaba tu valor.</p>
+
+  <span class="label">El cómo</span>
+  <ol class="how">
+    <li>Usa un modelo de frontera con ventana grande (<b>Claude Sonnet 5</b> es el punto dulce: rápido, barato y le cabe todo el lote).</li>
+    <li>Dale el contexto primero, no la orden. Pega: el régimen y la actividad del cliente, tus reglas de deducibilidad, y 3 o 4 ejemplos ya resueltos por ti (esto es «few-shot»: le enseñas con casos, no con instrucciones).</li>
+    <li>Luego el lote, y pide la salida en tabla: RFC emisor, concepto, monto, clasificación, motivo, nivel de confianza.</li>
+    <li>Filtra por «nivel de confianza bajo» y revisa solo esos.</li>
+  </ol>
+
+  <div class="prompt">
+    <div class="prompt__bar"><span>El prompt</span><span class="hint">Ajusta lo que está entre [corchetes]</span></div>
+    <div class="prompt__body"><pre>Actúa como el gerente fiscal de mi despacho. Vas a clasificar CFDIs como
+DEDUCIBLE, NO DEDUCIBLE o REVISAR para un cliente.
+
+CONTEXTO DEL CLIENTE
+- Régimen: [RESICO PF / Actividad Empresarial / Régimen General PM...]
+- Actividad económica: [ej. venta de hamburguesas]
+- Criterios de mi despacho: solo lo estrictamente indispensable para esa
+  actividad; comidas solo con razón de negocio documentada; combustibles
+  solo con pago bancarizado.
+
+EJEMPLOS RESUELTOS (aprende de estos)
+- "Carne y pan" para un negocio de hamburguesas -&gt; DEDUCIBLE (insumo directo).
+- "Cena en restaurante" sin con quién ni para qué -&gt; REVISAR.
+- "Gasolina pagada en efectivo" -&gt; NO DEDUCIBLE (sin pago bancarizado).
+
+TAREA
+Clasifica cada CFDI del listado. Trabaja SOLO con los datos que te doy;
+no inventes conceptos ni montos.
+
+FORMATO DE SALIDA (tabla)
+RFC emisor | Concepto | Monto | Clasificación | Motivo (1 línea) | Confianza
+
+Al final, dame por separado solo los que marcaste REVISAR o confianza baja.
+
+LISTADO
+[pega aquí tu reporte de CFDIs]</pre></div>
+  </div>
+  <p class="prompt__note">Fíjate que no es un one-liner: le das rol, contexto, ejemplos, formato y reglas. Eso es context engineering.</p>
+
+  <div class="savings"><div class="savings__k">Cuánto ahorras</div><div class="savings__v">De horas de captura a una revisión enfocada de <b>15 a 20 minutos por cliente</b>.</div></div>
+</section>
+
+<!-- ===================== FLUJO 2 ===================== -->
+<section class="flow">
+  <div class="srule"></div>
+  <div class="eyebrow">Flujo 02</div>
+  <h2>Conciliar banco contra CFDI y contabilidad, con las diferencias ya marcadas</h2>
+
+  <span class="label">El dolor</span>
+  <p>Cuadrar el estado de cuenta contra los CFDIs y contra las pólizas es de lo más tedioso del cierre. Un depósito sin factura, un pago que no amarra con su complemento, un cargo que nadie registró. Encontrar la diferencia toma más que corregirla.</p>
+
+  <span class="label">Qué hace la IA</span>
+  <p>Le das los tres insumos (movimientos del banco, tus CFDIs del periodo y el mayor o las pólizas) y el modelo los empata. Te devuelve lo que sí cuadra y, sobre todo, lo que no: depósitos sin CFDI, facturas PPD sin su complemento de pago, PUE que terminaron en parcialidades, cargos sin registrar. Con la ventana de un millón de tokens, procesa un periodo completo de una sola vez.</p>
+
+  <span class="label label--keep">Qué te quedas tú</span>
+  <p>La interpretación de cada diferencia. Que un depósito no tenga factura puede ser un ingreso no facturado, un préstamo, un traspaso o un error del banco. La IA te lo señala; tú decides qué es y cómo se corrige. Esa lectura es tuya.</p>
+
+  <span class="label">El cómo</span>
+  <ol class="how">
+    <li>Modelo de frontera con razonamiento (<b>Claude Opus 5</b> rinde muy bien aquí porque el cruce tiene lógica de varios pasos).</li>
+    <li>Dale un criterio de éxito claro: «empata por monto y fecha con tolerancia de 2 días; marca toda diferencia mayor a X pesos; no inventes movimientos que no estén en los datos».</li>
+    <li>Pide un reporte con tres secciones: cuadrado, diferencias por resolver, y una nota de por qué cada diferencia quedó marcada.</li>
+    <li>Trabaja la lista de diferencias como tu tablero del cierre.</li>
+  </ol>
+
+  <div class="prompt">
+    <div class="prompt__bar"><span>El prompt</span><span class="hint">Ajusta lo que está entre [corchetes]</span></div>
+    <div class="prompt__body"><pre>Actúa como mi auxiliar de conciliación. Vas a cruzar tres fuentes y marcarme
+SOLO las diferencias.
+
+FUENTES
+1) MOVIMIENTOS DEL BANCO: [pega el estado de cuenta o el CSV]
+2) MIS CFDI DEL PERIODO: [pega el reporte de CFDI]
+3) MAYOR O PÓLIZAS: [pega el mayor o las pólizas]
+
+REGLAS
+- Empata por monto y fecha, con tolerancia de 2 días.
+- Marca toda diferencia mayor a $[monto] pesos.
+- No inventes movimientos que no estén en los datos. Si algo no cuadra, dilo.
+
+FORMATO DE SALIDA (tres secciones)
+A) CUADRADO: cuántos movimientos y por qué monto (resumen de una línea).
+B) DIFERENCIAS POR RESOLVER (tabla):
+   Fecha | Monto | Quién lo tiene | A quién le falta | Posible causa | Prioridad
+C) NOTA: en 3 líneas, qué reviso primero y por qué.</pre></div>
+  </div>
+  <p class="prompt__note">El criterio de éxito explícito («tolerancia de 2 días», «diferencia mayor a X») es lo que evita falsos positivos.</p>
+
+  <div class="savings"><div class="savings__k">Cuánto ahorras</div><div class="savings__v">La conciliación deja de ser el cuello de botella del cierre. <b>De medio día a un par de horas</b>, y la mayor parte de ese tiempo ahora es criterio, no búsqueda.</div></div>
+</section>
+
+<!-- ===================== FLUJO 3 ===================== -->
+<section class="flow">
+  <div class="srule"></div>
+  <div class="eyebrow">Flujo 03</div>
+  <h2>Redactar la respuesta técnica al SAT (y traducirla a tu cliente)</h2>
+
+  <span class="label">El dolor</span>
+  <p>Llega el requerimiento o la carta de invitación. Sabes la respuesta de fondo, pero armar el escrito con su fundamento legal, su tabla de conciliación y su tono correcto te quita una tarde. Y luego hay que explicárselo al cliente en palabras que entienda, sin que entre en pánico.</p>
+
+  <span class="label">Qué hace la IA</span>
+  <p>Le das el documento del SAT, tus números y las fuentes que aplican (los artículos de la ley, la regla de la miscelánea, tu papel de trabajo). El modelo te arma el borrador del escrito: estructura, fundamento, redacción formal y la tabla de soporte. Y en un segundo paso, te traduce ese mismo escrito a una explicación clara para el cliente.</p>
+
+  <div class="callout callout--warn">
+    <span class="callout__label">Qué te quedas tú</span>
+    <p>La responsabilidad legal, completa. Este es el flujo donde más cuida el criterio, porque un modelo puede sonar impecable y citar un artículo que no aplica. <b>Verifica cada fundamento contra la fuente real antes de firmar.</b> La IA te da el 80% del borrador; el 20% que lo vuelve defendible (y tu firma) son tuyos.</p>
+  </div>
+
+  <span class="label">El cómo</span>
+  <ol class="how">
+    <li>Este es el caso de «dale la fuente de la verdad». No confíes en la memoria del modelo para lo legal: pégale el texto de los artículos y reglas que aplican, y ordénale trabajar exclusivamente sobre esas fuentes.</li>
+    <li>Modelo de frontera fuerte (<b>Claude Opus 5</b> o <b>Fable 5</b> para lo más delicado).</li>
+    <li>Pídelo en dos entregas: primero el escrito formal fundamentado; luego «ahora explícame esto mismo en 5 líneas para un cliente que no es contador».</li>
+    <li>Verifica cada cita contra la fuente. Ajusta. Firma.</li>
+  </ol>
+
+  <div class="prompt">
+    <div class="prompt__bar"><span>El prompt</span><span class="hint">Ajusta lo que está entre [corchetes]</span></div>
+    <div class="prompt__body"><pre>Actúa como fiscalista senior. Vas a redactar la respuesta a un requerimiento
+del SAT.
+
+REGLA CRÍTICA: trabaja EXCLUSIVAMENTE sobre las fuentes que te pego. No cites
+de memoria. Si una fuente no lo dice, no lo afirmes.
+
+DOCUMENTO DEL SAT: [pega el requerimiento o la carta]
+MIS NÚMEROS: [pega tu papel de trabajo o la conciliación]
+FUENTES LEGALES (texto completo): [pega los artículos de la ley y las reglas
+de la miscelánea que aplican]
+
+ENTREGA 1 - EL ESCRITO
+Redacta el escrito formal: antecedentes, argumento fundamentado citando
+artículo por artículo (solo de las fuentes que te di) y una tabla de
+conciliación con mis números.
+
+ENTREGA 2 - PARA EL CLIENTE
+Explica ese mismo escrito en máximo 5 líneas, en lenguaje simple, para un
+cliente que no es contador y que está nervioso.</pre></div>
+  </div>
+  <p class="prompt__note">«Trabaja exclusivamente sobre las fuentes que te pego» es la línea que evita que el modelo invente un artículo.</p>
+
+  <div class="savings"><div class="savings__k">Cuánto ahorras</div><div class="savings__v">De una tarde por escrito a <b>menos de una hora</b>, con la parte legal ya estructurada y la comunicación al cliente resuelta de pasada.</div></div>
+</section>
+
+<!-- ===================== CIERRE ===================== -->
+<section class="close">
+  <div class="srule"></div>
+  <div class="eyebrow">Para cerrar</div>
+  <h2>La regla que amarra todo</h2>
+  <p>En los tres flujos el patrón es el mismo: la IA hace el trabajo completo, y el criterio y la responsabilidad siguen siendo enteramente tuyos. Ahí está tu valor.</p>
+
+  <div class="pullquote">«La IA no te reemplaza, te reemplaza el contador que la usa bien.» Es cierto, pero se queda corta.</div>
+
+  <p>El siguiente nivel no es solo usarla: es volverte quien diseña cómo opera tu despacho con ella. Cuando eres quien construyó el flujo que se usa todos los días, dejas de ser una pieza que se reemplaza. Te vuelves <b>infraestructura</b>. Y a la infraestructura no la despiden.</p>
+
+  <div class="next">
+    <h3>Sigue aquí</h3>
+    <ul>
+      <li><b>Newsletter</b> (fiscal + IA cada semana): <span class="link">todoconta.com/entra</span></li>
+      <li><b>Jueves de ContadorIA:</b> en vivo cada jueves, 11 am hora del centro de México.</li>
+      <li><b>Mini-curso «Flujos Pro: Cierra tu Mes con IA»:</b> los flujos que de verdad te comen las noches (PPD, DIOT, nómina y cierre), en video y con sus prompts.</li>
+    </ul>
+    <p class="sign"><b>Israel Castro.</b> Contador Público y desarrollador. Construyo herramientas fiscales con IA. Creador de TodoConta.</p>
+  </div>
+</section>
+
+</body>
+</html>
