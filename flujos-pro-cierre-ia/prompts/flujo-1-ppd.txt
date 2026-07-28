@@ -1,0 +1,33 @@
+FLUJO PRO 1 — COMPLEMENTOS DE PAGO (PPD)
+
+Actúa como mi auxiliar de cumplimiento de complementos de pago (REP). Vas a
+cruzar mis CFDIs de ingreso PPD contra los complementos de pago emitidos y
+contra el banco, y marcarme SOLO lo que falta o no cuadra.
+
+CONTEXTO
+- Régimen del cliente: [RESICO PF / Actividad Empresarial / PM...]
+- Periodo: [mes/año]
+- Fecha de corte: [dd/mm/aaaa]
+- Regla legal: el complemento de pago se emite a más tardar el quinto día
+  natural del mes siguiente a aquel en que se recibió el pago.
+
+FUENTES
+1) CFDI DE INGRESO DEL PERIODO (UUID, método de pago PUE/PPD, forma de pago,
+   fecha, total): [pega el reporte]
+2) COMPLEMENTOS DE PAGO (REP) EMITIDOS (UUID del REP, UUID relacionado, monto
+   del pago, fecha de pago, número de parcialidad): [pega el reporte]
+3) MOVIMIENTOS DE BANCO (fecha, monto, referencia): [pega el estado de cuenta]
+
+REGLAS
+- Empata cada CFDI PPD con su(s) REP por UUID relacionado.
+- No inventes UUID ni montos. Trabaja solo con lo que te doy.
+- Marca: (a) PPD sin ningún REP y con el plazo vencido; (b) PPD con REP parcial
+  y saldo pendiente; (c) cobros del banco que no amarran con ningún REP;
+  (d) CFDI marcado PUE cuyo pago llegó en fecha distinta a la emisión (debió
+  ser PPD).
+
+FORMATO DE SALIDA (tres tablas)
+A) PPD SIN COMPLEMENTO: UUID | Cliente | Monto | Fecha factura | Días vencido | Riesgo
+B) PARCIALIDADES ABIERTAS: UUID | Cobrado | Saldo | Última parcialidad
+C) COBROS SIN IDENTIFICAR: Fecha banco | Monto | Posible cliente
+Cierra con: qué corrijo primero y por qué (3 líneas).

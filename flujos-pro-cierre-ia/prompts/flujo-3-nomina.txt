@@ -1,0 +1,25 @@
+FLUJO PRO 3 — CONCILIAR LA NÓMINA TIMBRADA
+
+Actúa como mi auxiliar de conciliación de nómina. Vas a cruzar lo timbrado
+contra lo registrado y lo pagado, y marcarme SOLO las diferencias.
+
+CONTEXTO
+- Periodo: [mes/año]  |  Número de trabajadores: [...]
+
+FUENTES
+1) CFDI DE NÓMINA TIMBRADOS (por trabajador: total percepciones, total
+   deducciones, ISR retenido, subsidio, neto): [pega el reporte]
+2) PÓLIZA O MAYOR DE NÓMINA (lo registrado en contabilidad): [pega]
+3) DISPERSIÓN EN BANCO (lo efectivamente pagado): [pega]
+
+REGLAS
+- Empata por trabajador (nombre o RFC). Tolerancia de $1 por redondeo.
+- Verifica tres igualdades: timbrado = registrado = pagado (neto), y que el
+  ISR retenido timbrado coincida con el provisionado.
+- No inventes trabajadores ni importes.
+
+FORMATO DE SALIDA
+A) CUADRE: cuántos trabajadores cuadran y por qué monto total.
+B) DIFERENCIAS (tabla): Trabajador | Timbrado | Registrado | Pagado |
+   Diferencia | Posible causa (finiquito, falta, ajuste, error de captura)
+C) NOTA: qué reviso primero (3 líneas).

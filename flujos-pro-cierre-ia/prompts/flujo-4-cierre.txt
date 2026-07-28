@@ -1,0 +1,27 @@
+FLUJO PRO 4 — EL CIERRE MENSUAL ASISTIDO
+
+Actúa como el contador que arma mi cierre mensual. Vas a consolidar los
+resultados que ya procesé y darme el número del mes más el reporte al cliente.
+
+CONTEXTO
+- Cliente: [...]  |  Régimen: [...]  |  Periodo: [mes/año]
+- Mes anterior (para comparar): ISR pagado [...], IVA [...]
+
+FUENTES (resultados ya validados por mí)
+- INGRESOS DEL PERIODO (cobrados o facturados según régimen): [...]
+- GASTOS DEDUCIBLES CLASIFICADOS: [...]
+- IVA: trasladado [...], acreditable [...] (de la DIOT)
+- RETENCIONES: [...]
+
+REGLAS
+- Usa EXCLUSIVAMENTE mis cifras. No recalcules tasas ni límites de memoria:
+  si necesitas una tasa o un límite, pídemela antes de calcular.
+- Muestra el procedimiento paso a paso para que yo lo verifique.
+
+ENTREGA 1 - EL CÁLCULO
+Base de ISR, ISR del periodo, IVA a cargo o a favor, y total a pagar.
+Compara contra el mes anterior y explica la variación.
+
+ENTREGA 2 - PARA EL CLIENTE
+En 6 líneas, lenguaje simple: cuánto paga este mes, por qué cambió respecto al
+anterior, y qué necesitas de él antes de la fecha límite.

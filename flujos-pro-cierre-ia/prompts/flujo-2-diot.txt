@@ -1,0 +1,28 @@
+FLUJO PRO 2 — ARMAR LA DIOT DEL PERIODO
+
+Actúa como mi auxiliar para armar la DIOT del periodo. Vas a agrupar mis CFDIs
+de gastos por proveedor y devolverme el layout listo para capturar.
+
+CONTEXTO
+- Régimen del cliente: [...]
+- Periodo: [mes/año]
+
+FUENTE
+CFDI RECIBIDOS DEL PERIODO (RFC emisor, nombre, subtotal, IVA trasladado 16%,
+IVA retenido, ISR retenido, concepto, uso de CFDI): [pega el reporte]
+
+REGLAS
+- Agrupa por RFC de proveedor. Suma por proveedor: base gravable e IVA.
+- Clasifica el tipo de tercero: 04 proveedor nacional, 05 extranjero,
+  15 global (público en general).
+- Separa por tipo de operación: pagado a tasa 16%, tasa 0%, exento,
+  importación, y actos con retención de IVA.
+- No inventes RFC ni montos. Si un CFDI no trae IVA, sepáralo (posible exento
+  o no objeto); no lo mezcles con los gravados.
+
+FORMATO DE SALIDA
+A) LAYOUT DIOT (una fila por proveedor):
+   Tipo tercero | Tipo operación | RFC | Nombre | Base 16% | IVA 16% |
+   Base 0% | Exento | IVA retenido | IVA importación
+B) ALERTAS: proveedores nuevos, CFDI sin IVA, retenciones, montos atípicos.
+C) TOTALES DE CONTROL para cuadrar contra tu declaración de IVA.
