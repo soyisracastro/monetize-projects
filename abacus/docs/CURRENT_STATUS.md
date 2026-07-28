@@ -33,6 +33,23 @@ Abacus está corriendo en producción atendiendo usuarios reales desde ~marzo 20
 | Heartbeat | Cada 55 minutos |
 | Context pruning | cache-ttl 1h, keepLastAssistants 10 |
 | Puerto gateway | 18789 (localhost) |
+| **Media WhatsApp** | **Habilitado — `mediaMaxMb: 50`** |
+
+### Procesamiento de archivos vía WhatsApp
+
+| Tipo de archivo | Soporte | Procesado por | Notas |
+|---|---|---|---|
+| PDF | ✅ Sí | Gemini 2.5 Flash (`pdfModel`) | Hasta 50 MB / 100 páginas |
+| CSV | ✅ Sí | Claude Sonnet 4.6 (modelo principal) | Enviado como documento adjunto |
+| XML (CFDI) | ✅ Sí | Plugin `abacus-cfdi-tools` | Parseo CFDI 4.0, export Excel/PDF |
+| Imágenes | ✅ Sí | Gemini 2.5 Flash (`imageModel`) | Hasta 20 MB |
+| Audio/Voz | ✅ Sí | OpenAI Whisper API | Transcripción automática |
+
+Configuración relevante en `openclaw.json`:
+- `channels.whatsapp.mediaMaxMb: 50` — límite de archivos adjuntos
+- `agents.defaults.pdfModel: google/gemini-2.5-flash` — modelo para PDFs
+- `agents.defaults.pdfMaxBytesMb: 50` / `pdfMaxPages: 100` — límites PDF
+- `tools.media.image.enabled: true` / `maxBytes: 20971520` — imágenes habilitadas
 
 ## Canales de mensajería activos
 
