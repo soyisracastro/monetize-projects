@@ -1,5 +1,18 @@
 # Ebook: IA para Contadores
 
+> **⚠️ BORRADOR OBSOLETO (marcado 2026-08-31). NO EDITAR `chapters/`.**
+>
+> La **fuente de verdad** del libro vive en `soycontador-ai/ebook/`: ahí está el
+> contenido con la revisión editorial, los acentos corregidos y los parches de la
+> segunda edición (agosto 2026), junto con el diseño (`ebook/lib/tema.mjs`) y los
+> generadores de PDF (`pnpm ebook`). Estuvo un tiempo en `newsletter-blog`; se
+> movió el 2026-08-31 para quedar junto a la página que lo vende.
+>
+> Este árbol se conserva solo por el trabajo de preproducción que NO se migró:
+> `outline.md`, `style-guide.md`, `chapter-template.md` y `marketing/`. Los
+> `chapters/` de aquí son la versión de marzo, sin frontmatter y con acentos
+> crudos; cualquier cambio hecho aquí no llega al libro que se vende.
+
 ## Qué es este proyecto
 
 Ebook educativo (~90-100 páginas) que enseña conceptos de inteligencia artificial a contadores mexicanos usando analogías del mundo contable. No es un manual técnico ni un tutorial de herramientas — es un libro de conceptos que responde "qué es la IA, cómo funciona y cómo me afecta como contador".

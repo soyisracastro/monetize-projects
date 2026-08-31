@@ -177,7 +177,7 @@ Esto es para ti si...
 Escrito por un contador que también programa
 
 ### Texto
-Soy Isca Castro — Contador Público mexicano, programador y fundador de TodoConta y S&I Castro Consultores.
+Soy Israel Castro, contador público mexicano y desarrollador de software, fundador de TodoConta y S&I Castro Consultores.
 
 Llevo años en despacho: declaraciones, nómina, IMSS, auditorías, todo lo que tú haces. Pero también llevo más de un año estudiando, probando y aplicando inteligencia artificial en el trabajo contable real.
 
